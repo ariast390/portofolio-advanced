@@ -1,0 +1,10 @@
+/* Tombol dengan animasi hover */
+.hover-button {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  background-color: #a40e4c;
+}
+
+.hover-button:hover {
+  background-color: #f9a03f;
+  transform: translateY(-5px);
+}
