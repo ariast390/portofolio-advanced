@@ -6,16 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/dist/output.css" rel="stylesheet" />
     <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://kit.fontawesome.com/021eda2c9b.js" crossorigin="anonymous"></script>
+
     <title>Document</title>
   </head>
   <body>
-    <section id="home" class="pt-28">
+    <!-- <section
+      id="home"
+      class="pt-28 bg-cover relative"
+      style="background-image: url(dist/img/bg-hero2.jpg)"
+    > -->
+    <section id="home" class="pt-28 bg-cover relative">
       <div class="container">
         <div class="flex flex-wrap">
           <div class="w-full self-center px-7 lg:w-1/2">
-            <h1 class="text-base font-semibold text-third md:text-xl">Halo 🤞, saya <span class="block font-bold text-dark text-4xl lg:text-6xl"> Aria Sena Trimulia</span></h1>
+            <h1 class="text-base font-semibold text-third md:text-xl">
+              Hello 🤞, im
+              <span
+                class="block font-bold text-primary text-4xl lg:text-6xl mr-32 typing-animation"
+              >
+                Aria Sena Trimulia</span
+              >
+            </h1>
             <h2 class="font-medium text-abu text-lg mb-4">Fresh Graduate | Systems Information</h2>
-            <p class="font-medium text-abu mb-10 text-lg leading-relaxed lg:text-3xl">portfolio & Curriculum Vitae</p>
+            <p class="font-medium text-abu mb-10 text-lg leading-relaxed lg:text-3xl">
+              portfolio & Curriculum Vitae
+            </p>
 
             <button
               class="bg-blue-500 hover:bg-primary active:bg-blue-800 text-white font-bold py-2 px-4 rounded-full modal-open transition-all duration-300 transform-gpu hover:-translate-y-1 hover:scale-100 active:scale-95"
@@ -25,18 +41,389 @@
           </div>
           <div class="w-full self-end px-4 lg:w-1/2 relative">
             <img src="dist/img/pasfoto2.png" alt="Aria Sena" class="max-w-full mx-auto" />
-            <span class="absolute -bottom-0 -z-10 left-1/2 -translate-x-1/2 md:scale-100">
-              <svg width="700" height="700" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <span
+              class="absolute -bottom-0 -z-10 left-1/2 -translate-x-1/2 md:scale-75 sm:scale-75"
+            >
+              <svg
+                width="700"
+                height="700"
+                viewBox="0 0 200 200"
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path
                   fill="#F9A03F"
                   d="M42.9,-15.8C49.3,6,44.1,29.7,25.3,46C6.5,62.2,-25.8,71.1,-47.9,57.1C-70,43.1,-82,6.3,-72.4,-19.9C-62.7,-46.1,-31.3,-61.6,-6.6,-59.5C18.2,-57.4,36.4,-37.6,42.9,-15.8Z"
                   transform="translate(100 100)"
-                />
+                ></path>
               </svg>
             </span>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- about me section -->
+    <section class="flex flex-wrap items-center justify-between h-screen">
+      <div class="w-full md:w-1/2 px-4">
+        <div class="text-center md:text-left">
+          <img src="dist/img/Code typing-amico.svg" alt="code-illustration" class="w-3/4 ml-10" />
+        </div>
+      </div>
+      <div class="w-full md:w-1/2 flex flex-col justify-start items-start rounded-2xl p-8">
+        <h2 class="text-3xl font-bold mb-4 mx-3">About Me</h2>
+        <div class="border-2 border-secondary rounded w-full"></div>
+        <div class="bg-primary p-6 rounded-lg mt-8 drop-shadow-lg">
+          <p class="lg:text-4xl sm:text-lg font-semibold text-dark leading-relaxed mb-3">
+            Lorem ipsum dolor sit amet.
+          </p>
+          <p class="my-2 break-words pr-40 text-base sm:text-sm">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, ratione laboriosam?
+            Saepe, quas dicta! Sequi sapiente reiciendis voluptatem quis modi, laboriosam maiores
+            earum officiis saepe. Odio est praesentium omnis doloremque. Explicabo illum corrupti
+            possimus fuga.
+          </p>
+          <div class="flex justify-start mt-5 gap-6">
+            <a
+              href="https://www.instagram.com/ariaa_sena"
+              target="_blank"
+              class="transition-all duration-300 transform-gpu hover:-translate-y-1 hover:scale-100 active:scale-95 relative"
+            >
+              <i class="fab fa-instagram fa-2xl" style="color: #f1f1f1"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/aria-sena-trimulia/"
+              target="_blank"
+              class="transition-all duration-300 transform-gpu hover:-translate-y-1 hover:scale-100 active:scale-95 relative"
+              data-tooltip-target="tooltip-linkedin"
+            >
+              <i class="fab fa-linkedin fa-2xl" style="color: #f1f1f1"></i>
+            </a>
+            <a
+              href="https://wa.me/6285730037568"
+              target="_blank"
+              class="transition-all duration-300 transform-gpu hover:-translate-y-1 hover:scale-100 active:scale-95 relative"
+              data-tooltip-target="tooltip-whatsapp"
+            >
+              <i class="fab fa-whatsapp fa-2xl" style="color: #f1f1f1"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about me section end -->
+
+    <!-- section timeline -->
+    <section class="timeline">
+      <!-- component -->
+      <div class="container bg-white mx-auto w-11/12 mb-10 rounded h-full shadow-xl">
+        <div class="relative wrap overflow-hidden p-10 h-full">
+          <div
+            class="border-2-2 absolute border-opacity-20 border-gray-700 h-full border"
+            style="left: 50%"
+          ></div>
+
+          <!-- right timeline -->
+          <div class="mb-8 flex justify-between items-center w-full right-timeline">
+            <div class="order-1 w-5/12"></div>
+            <div class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
+              <h1 class="mx-auto font-semibold text-lg text-white">1</h1>
+            </div>
+            <div
+              class="order-1 bg-primary rounded-lg shadow-xl w-5/12 px-6 py-4 cursor-pointer read-more"
+              data-modal-target="Modal-pengalaman1"
+              data-modal-toggle="Modal-pengalaman1"
+            >
+              <h3 class="mb-3 font-bold text-gray-800 text-xl">pengalaman 1</h3>
+              <p class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                unknown printer took a galley of type and scrambled it to make a type specimen book.
+              </p>
+              <p class="flex justify-end font-medium items-end pt-5 gap-x-2 text-white">
+                Read More
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-5 h-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                  />
+                </svg>
+              </p>
+            </div>
+          </div>
+          <!-- modalbox1 -->
+          <div
+            id="Modal-pengalaman1"
+            tabindex="-1"
+            aria-hidden="true"
+            class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full"
+          >
+            <div class="relative w-full max-w-2xl max-h-full">
+              <!-- Modal content -->
+              <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                <!-- Modal header -->
+                <div
+                  class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600"
+                >
+                  <h3 class="text-xl font-semibold text-gray-900 dark:text-white">PENGALAMAN 1</h3>
+                  <button
+                    type="button"
+                    class="text-gray-400 bg-transparent hover:bg-gray-300 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                    data-modal-hide="Modal-pengalaman1"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="w-5 h-5"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                    <span class="sr-only">Close modal</span>
+                  </button>
+                </div>
+                <!-- Modal body -->
+                <div class="p-6 space-y-6">
+                  <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                    With less than a month to go before the European Union enacts new consumer
+                    privacy laws for its citizens, companies around the world are updating their
+                    terms of service agreements to comply.
+                  </p>
+                  <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                    The European Union’s General Data Protection Regulation (G.D.P.R.) goes into
+                    effect on May 25 and is meant to ensure a common set of data rights in the
+                    European Union. It requires organizations to notify users as soon as possible of
+                    high-risk data breaches that could personally affect them.
+                  </p>
+                </div>
+                <!-- Modal footer -->
+                <div
+                  class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600"
+                >
+                  <p>ini adalah footer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- modalbox1 end -->
+
+          <!-- left timeline 2-->
+          <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+            <div class="order-1 w-5/12"></div>
+            <div class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
+              <h1 class="mx-auto text-white font-semibold text-lg">2</h1>
+            </div>
+            <div
+              class="order-1 bg-yellow rounded-lg shadow-xl w-5/12 px-6 py-4 cursor-pointer read-more"
+              data-modal-target="Modal-pengalaman2"
+              data-modal-toggle="Modal-pengalaman2"
+            >
+              <h3 class="mb-3 font-bold text-gray-900 text-xl">PENGALAMAN 2</h3>
+              <p
+                class="text-sm font-medium leading-snug tracking-wide text-gray-900 text-opacity-100"
+              >
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                unknown printer took a galley of type and scrambled it to make a type specimen book.
+              </p>
+              <p class="flex justify-end font-medium items-end pt-5 gap-x-2 text-secondary">
+                Read More
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-5 h-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                  />
+                </svg>
+              </p>
+            </div>
+          </div>
+          <!-- timeline2 end -->
+
+          <!-- modalbox2 -->
+          <div
+            id="Modal-pengalaman2"
+            tabindex="-1"
+            aria-hidden="true"
+            class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full"
+          >
+            <div class="relative w-full max-w-2xl max-h-full">
+              <!-- Modal content -->
+              <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                <!-- Modal header -->
+                <div
+                  class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600"
+                >
+                  <h3 class="text-xl font-semibold text-gray-900 dark:text-white">PENGALAMAN 2</h3>
+                  <button
+                    type="button"
+                    class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                    data-modal-hide="defaultModal"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="w-5 h-5"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                    <span class="sr-only">Close modal</span>
+                  </button>
+                </div>
+                <!-- Modal body -->
+                <div class="p-6 space-y-6">
+                  <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                    With less than a month to go before the European Union enacts new consumer
+                    privacy laws for its citizens, companies around the world are updating their
+                    terms of service agreements to comply.
+                  </p>
+                  <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                    The European Union’s General Data Protection Regulation (G.D.P.R.) goes into
+                    effect on May 25 and is meant to ensure a common set of data rights in the
+                    European Union. It requires organizations to notify users as soon as possible of
+                    high-risk data breaches that could personally affect them.
+                  </p>
+                </div>
+                <!-- Modal footer -->
+                <div
+                  class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600"
+                >
+                  <p>ini adalah footer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- modalbox2 end -->
+
+          <!-- right timeline 3 -->
+          <div class="mb-8 flex justify-between items-center w-full right-timeline">
+            <div class="order-1 w-5/12"></div>
+            <div class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
+              <h1 class="mx-auto font-semibold text-lg text-white">3</h1>
+            </div>
+            <div
+              class="order-1 bg-gray-400 rounded-lg shadow-xl w-5/12 px-6 py-4 cursor-pointer read-more"
+              data-modal-target="Modal-pengalaman3"
+              data-modal-toggle="Modal-pengalaman3"
+            >
+              <h3 class="mb-3 font-bold text-gray-800 text-xl">PENGALAMAN 3</h3>
+              <p class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                unknown printer took a galley of type and scrambled it to make a type specimen book.
+              </p>
+              <p class="flex justify-end font-medium items-end pt-5 gap-x-2 text-white">
+                Read More
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-5 h-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                  />
+                </svg>
+              </p>
+            </div>
+          </div>
+          <!-- end timeline3 -->
+
+          <!-- modal box3 -->
+          <div
+            id="Modal-pengalaman3"
+            tabindex="-1"
+            aria-hidden="true"
+            class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full"
+          >
+            <div class="relative w-full max-w-2xl max-h-full">
+              <!-- Modal content -->
+              <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                <!-- Modal header -->
+                <div
+                  class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600"
+                >
+                  <h3 class="text-xl font-semibold text-gray-900 dark:text-white">PENGALAMAN 3</h3>
+                  <button
+                    type="button"
+                    class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                    data-modal-hide="defaultModal"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="w-5 h-5"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                    <span class="sr-only">Close modal</span>
+                  </button>
+                </div>
+                <!-- Modal body -->
+                <div class="p-6 space-y-6">
+                  <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                    With less than a month to go before the European Union enacts new consumer
+                    privacy laws for its citizens, companies around the world are updating their
+                    terms of service agreements to comply.
+                  </p>
+                  <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                    The European Union’s General Data Protection Regulation (G.D.P.R.) goes into
+                    effect on May 25 and is meant to ensure a common set of data rights in the
+                    European Union. It requires organizations to notify users as soon as possible of
+                    high-risk data breaches that could personally affect them.
+                  </p>
+                </div>
+                <!-- Modal footer -->
+                <div
+                  class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600"
+                >
+                  <p>ini adalah footer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- modal box3 end -->
+        </div>
+      </div>
+    </section>
+
+    <!-- section timeline end -->
+    <script src="dist/js/script.js"></script>
+    <script src="node_modules/flowbite/dist/flowbite.min.js"></script>
   </body>
 </html>

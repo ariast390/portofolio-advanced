@@ -8,3 +8,57 @@
   background-color: #f9a03f;
   transform: translateY(-5px);
 }
+
+/* animate img illustration */
+.avoid-cursor {
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+.avoid-cursor:hover {
+  transform: translate(calc(-2% + 5px), calc(-2% + 5px));
+}
+/* animate img illustration end */
+
+/* animated typing */
+.typing-animation {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 0.07em solid #000; /* Garis imitasi cursor */
+  animation: typing 3.5s steps(40, end), blink-caret 0.85s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 80%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #000;
+  }
+}
+/* animated typing end */
+
+/* hover animated readmore */
+.read-more:hover svg {
+  animation: moveRight 0.3s ease-in-out forwards;
+}
+
+@keyframes moveRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(5px);
+  }
+}
+/* hover animated readmore end */
