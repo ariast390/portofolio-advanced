@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -6,7 +6,6 @@
 
 @layer base {
   html {
-    font-family: "DM Sans", sans-serif;
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: "Nunito", sans-serif;
   }
 }

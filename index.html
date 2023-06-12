@@ -6,139 +6,418 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/dist/output.css" rel="stylesheet" />
     <link rel="stylesheet" href="src/styles.css" />
+    <link rel="stylesheet" href="src/bg2.css" />
     <script src="https://kit.fontawesome.com/021eda2c9b.js" crossorigin="anonymous"></script>
 
     <title>Document</title>
   </head>
-  <body>
+  <body class="overflow-x-hidden scroll-smooth">
     <!-- <section
       id="home"
       class="pt-28 bg-cover relative"
-      style="background-image: url(dist/img/bg-hero2.jpg)"
+      style="background-image: url(dist/img/bg-hero3.jpg)"
     > -->
-    <section id="home" class="pt-28 bg-cover relative">
+
+    <!-- navbar -->
+    <nav class="bg-transparent fixed top-0 left-0 right-0 py-1 z-50 scroll-border">
+      <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+        <div class="relative flex items-center justify-between h-14">
+          <!-- Logo -->
+          <div class="flex-shrink-0 visible sm:invisible">
+            <a href="#" class="text-dark text-2xl font-semibold">Aria Portfolio's </a>
+          </div>
+
+          <!-- Mobile menu button -->
+          <div class="absolute inset-y-0 right-0 flex items-center sm:hidden">
+            <button
+              id="mobile-menu-button"
+              type="button"
+              class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <!-- Hamburger menu icon -->
+              <svg
+                class="h-6 w-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Desktop menu -->
+          <div class="hidden sm:block sm:ml-6">
+            <div class="flex">
+              <a
+                href="#home"
+                class="text-[#2C3333] hover:text-[#53aaaa] px-3 py-2 rounded text-lg font-bold duration-150"
+                >Home</a
+              >
+              <span class="px-3 py-2 text-gray-300 text-base">|</span>
+              <a
+                href="#about-me"
+                class="text-[#2C3333] hover:text-[#53aaaa] px-3 py-2 rounded-md text-lg font-bold duration-150"
+                >About Me</a
+              >
+              <span class="px-3 py-2 text-white text-lg">|</span>
+              <a
+                href="#timeline"
+                class="text-[#2C3333] hover:text-[#53aaaa] px-3 py-2 rounded-md text-lg font-bold duration-150"
+                >My Journey</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile menu -->
+      <div
+        id="mobile-menu"
+        class="hidden sm:hidden absolute bg-white py-5 shadow-lg rounded-lg max-w-[250px] w-full right-4"
+      >
+        <div class="px-2 pt-2 pb-3 space-y-1">
+          <a
+            href="#"
+            class="text-dark hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-xl font-bold"
+            >Home</a
+          >
+
+          <a
+            href="#"
+            class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+            >Menu 2</a
+          >
+          <a
+            href="#"
+            class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+            >Menu 3</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- navbar end -->
+
+    <section id="home" class="bg-hero">
       <div class="container">
         <div class="flex flex-wrap">
-          <div class="w-full self-center px-7 lg:w-1/2">
-            <h1 class="text-base font-semibold text-third md:text-xl">
-              Hello 🤞, im
-              <span
-                class="block font-bold text-primary text-4xl lg:text-6xl mr-32 typing-animation"
-              >
-                Aria Sena Trimulia</span
-              >
+          <div class="w-full px-10 py-28 lg:w-1/2 lg:px-7">
+            <h1 class="text-xl font-semibold text-third md:text-xl">
+              Hello <span class="inline-block animate-wave">👋</span>
+              , I'am
+              <span class="block font-bold text-4xl lg:text-8xl sm:mr-12 typing-animation">
+                Aria Sena
+              </span>
             </h1>
-            <h2 class="font-medium text-abu text-lg mb-4">Fresh Graduate | Systems Information</h2>
-            <p class="font-medium text-abu mb-10 text-lg leading-relaxed lg:text-3xl">
-              portfolio & Curriculum Vitae
+            <h2 class="font-bold text-gray-700 text-lg mb-4">
+              Fresh Graduate | Systems Information
+            </h2>
+            <p class="font-bold text-dark mb-7 text-xs leading-relaxed lg:text-base lg:mr-32">
+              Passionate for computers, networking, and programming. Learning new things is my way
+              to keep growing.
             </p>
 
             <button
-              class="bg-blue-500 hover:bg-primary active:bg-blue-800 text-white font-bold py-2 px-4 rounded-full modal-open transition-all duration-300 transform-gpu hover:-translate-y-1 hover:scale-100 active:scale-95"
+              class="bg-blue-500 hover:bg-white hover:text-dark active:bg-blue-800 text-white font-bold py-2 px-4 rounded-full modal-open transition-all duration-300 transform-gpu hover:-translate-y-1 hover:scale-100 active:scale-95"
             >
               Hubungi saya
             </button>
           </div>
-          <div class="w-full self-end px-4 lg:w-1/2 relative">
-            <img src="dist/img/pasfoto2.png" alt="Aria Sena" class="max-w-full mx-auto" />
+          <div class="w-full self-center px-4 lg:w-1/2 relative">
+            <object data="dist/img/hand-coding-animate-laptop.svg "></object>
+            <!-- <img src="dist/img/pasfoto2.png" alt="Aria Sena" class="max-w-full mx-auto" />
             <span
-              class="absolute -bottom-0 -z-10 left-1/2 -translate-x-1/2 md:scale-75 sm:scale-75"
+              class="absolute -bottom-0 -z-10 left-1/2 -translate-x-1/2 md:scale-75 sm:scale-75 overflow-hidden"
             >
               <svg
-                width="700"
+                width="500"
                 height="700"
                 viewBox="0 0 200 200"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  fill="#F9A03F"
+                  fill="#FFE194"
                   d="M42.9,-15.8C49.3,6,44.1,29.7,25.3,46C6.5,62.2,-25.8,71.1,-47.9,57.1C-70,43.1,-82,6.3,-72.4,-19.9C-62.7,-46.1,-31.3,-61.6,-6.6,-59.5C18.2,-57.4,36.4,-37.6,42.9,-15.8Z"
-                  transform="translate(100 100)"
+                  transform="translate(130 150)"
                 ></path>
               </svg>
-            </span>
+            </span> -->
           </div>
         </div>
       </div>
     </section>
 
     <!-- about me section -->
-    <section class="flex flex-wrap items-center justify-between h-screen">
-      <div class="w-full md:w-1/2 px-4">
+    <section
+      class="flex flex-wrap items-center justify-center mx-auto mt-28 pb-4 bg-slate-100"
+      id="about-me"
+    >
+      <div class="w-full md:w-1/2 pt-20 px-3 mt-36 md:pt-56 md:-mt-28">
         <div class="text-center md:text-left">
-          <img src="dist/img/Code typing-amico.svg" alt="code-illustration" class="w-3/4 ml-10" />
-        </div>
-      </div>
-      <div class="w-full md:w-1/2 flex flex-col justify-start items-start rounded-2xl p-8">
-        <h2 class="text-3xl font-bold mb-4 mx-3">About Me</h2>
-        <div class="border-2 border-secondary rounded w-full"></div>
-        <div class="bg-primary p-6 rounded-lg mt-8 drop-shadow-lg">
-          <p class="lg:text-4xl sm:text-lg font-semibold text-dark leading-relaxed mb-3">
-            Lorem ipsum dolor sit amet.
-          </p>
-          <p class="my-2 break-words pr-40 text-base sm:text-sm">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, ratione laboriosam?
-            Saepe, quas dicta! Sequi sapiente reiciendis voluptatem quis modi, laboriosam maiores
-            earum officiis saepe. Odio est praesentium omnis doloremque. Explicabo illum corrupti
-            possimus fuga.
-          </p>
-          <div class="flex justify-start mt-5 gap-6">
-            <a
-              href="https://www.instagram.com/ariaa_sena"
-              target="_blank"
-              class="transition-all duration-300 transform-gpu hover:-translate-y-1 hover:scale-100 active:scale-95 relative"
-            >
-              <i class="fab fa-instagram fa-2xl" style="color: #f1f1f1"></i>
-            </a>
-            <a
-              href="https://www.linkedin.com/in/aria-sena-trimulia/"
-              target="_blank"
-              class="transition-all duration-300 transform-gpu hover:-translate-y-1 hover:scale-100 active:scale-95 relative"
-              data-tooltip-target="tooltip-linkedin"
-            >
-              <i class="fab fa-linkedin fa-2xl" style="color: #f1f1f1"></i>
-            </a>
-            <a
-              href="https://wa.me/6285730037568"
-              target="_blank"
-              class="transition-all duration-300 transform-gpu hover:-translate-y-1 hover:scale-100 active:scale-95 relative"
-              data-tooltip-target="tooltip-whatsapp"
-            >
-              <i class="fab fa-whatsapp fa-2xl" style="color: #f1f1f1"></i>
-            </a>
+          <div class="relative -mt-64">
+            <img
+              src="dist/img/Rectangle 2.png"
+              alt=""
+              class="absolute w-3/4 -left-3 overflow-hidden z-auto invisible md:visible"
+              style="rotate: 180deg"
+            />
+            <img src="dist/img/box-bg.png" alt="" class="absolute overflow-hidden z-10" />
+            <img
+              src="dist/img/pasfoto2.png"
+              alt="Aria Profile"
+              class="relative h-auto top-5 pasfoto z-30"
+            />
           </div>
         </div>
+      </div>
+      <div
+        class="w-full my-1 flex flex-col justify-start items-start rounded-2xl p-8 md:-mt-3 md:w-1/2 lg:my-0"
+      >
+        <h2 class="text-2xl sm:text-4xl font-bold mb-4 mx-4 pt-10 sm:pt-0">Tentang Saya</h2>
+        <div class="border-2 border-secondary rounded w-full"></div>
+
+        <!-- percobaan -->
+        <div id="accordion-collapse" data-accordion="collapse" class="my-5 w-full">
+          <h2 id="accordion-collapse-heading-1">
+            <button
+              type="button"
+              class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 bg-gray-200 border border-b-0 border-gray-300 rounded-t-xl focus:ring-2 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+              data-accordion-target="#accordion-collapse-body-1"
+              aria-expanded="true"
+              aria-controls="accordion-collapse-body-1"
+            >
+              <span class="text-lg font-bold">About Me</span>
+              <svg
+                data-accordion-icon
+                class="w-6 h-6 rotate-180 shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </h2>
+          <div
+            id="accordion-collapse-body-1"
+            class="hidden"
+            aria-labelledby="accordion-collapse-heading-1"
+          >
+            <div class="p-5 border border-b-0 border-gray-300 dark:border-gray-700">
+              <p class="mb-2 text-sm md:text-lg text-justify text-gray-500 dark:text-gray-400">
+                Saya adalah seorang pengembang web yang berfokus pada front-end development. Saya
+                memiliki passion dalam menciptakan pengalaman pengguna yang menarik dan fungsional
+                melalui desain yang responsif dan interaktif. Dengan keahlian dalam HTML, CSS, dan
+                JavaScript, saya senang membangun website yang modern dan estetis.
+              </p>
+            </div>
+          </div>
+          <h2 id="accordion-collapse-heading-2">
+            <button
+              type="button"
+              class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 bg-gray-200 border border-gray-300 focus:ring-2 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+              data-accordion-target="#accordion-collapse-body-2"
+              aria-expanded="false"
+              aria-controls="accordion-collapse-body-2"
+            >
+              <span class="text-lg font-bold">My Skills</span>
+              <svg
+                data-accordion-icon
+                class="w-6 h-6 shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </h2>
+          <div
+            id="accordion-collapse-body-2"
+            class="hidden"
+            aria-labelledby="accordion-collapse-heading-2"
+          >
+            <div class="p-5 border rounded-b-xl border-gray-300 dark:border-gray-700">
+              <div class="flex flex-wrap justify-center gap-10">
+                <!-- Keahlian HTML -->
+                <div class="flex flex-col items-center justify-center gap-1">
+                  <div
+                    class="flex w-12 h-12 justify-center items-center transform transition-all duration-300 hover:scale-110"
+                  >
+                    <img src="dist/img/icon/icon-html.png" alt="HTML Icon" />
+                  </div>
+                  <div>
+                    <p class="font-semibold text-lg">HTML</p>
+                  </div>
+                  <div>
+                    <p class="text-gray-500 text-base">Intermediate</p>
+                  </div>
+                </div>
+
+                <!-- Keahlian CSS -->
+                <div class="flex flex-col items-center justify-center gap-1">
+                  <div
+                    class="flex w-12 h-12 justify-center items-center transform transition-all duration-300 hover:scale-110"
+                  >
+                    <img src="dist/img/icon/icon-css.png" alt="CSS Icon" />
+                  </div>
+                  <div>
+                    <p class="font-semibold text-lg">CSS</p>
+                  </div>
+                  <div>
+                    <p class="text-gray-500 text-base">Intermediate</p>
+                  </div>
+                </div>
+
+                <!-- Keahlian JavaScript -->
+                <div class="flex flex-col items-center justify-center gap-1">
+                  <div
+                    class="flex w-12 h-12 justify-center items-center transform transition-all duration-300 hover:scale-110"
+                  >
+                    <img src="dist/img/icon/icon-JS.png" alt="JavaScript Icon" />
+                  </div>
+                  <div>
+                    <p class="font-semibold text-lg">JavaScript</p>
+                  </div>
+                  <div>
+                    <p class="text-gray-500 text-base">Intermediate</p>
+                  </div>
+                </div>
+
+                <!-- Keahlian React -->
+                <div class="flex flex-col items-center justify-center gap-1">
+                  <div
+                    class="flex w-12 h-12 justify-center items-center transform transition-all duration-300 hover:scale-110"
+                  >
+                    <img src="dist/img/icon/icon-react.png" alt="React Icon" />
+                  </div>
+                  <div>
+                    <p class="font-semibold text-lg">React</p>
+                  </div>
+                  <div>
+                    <p class="text-gray-500 text-base">Intermediate</p>
+                  </div>
+                </div>
+
+                <!-- Keahlian Python -->
+                <div class="flex flex-col items-center justify-center gap-1">
+                  <div
+                    class="flex w-12 h-12 justify-center items-center transform transition-all duration-300 hover:scale-110"
+                  >
+                    <img src="dist/img/icon/icon-python.png" alt="Python Icon" />
+                  </div>
+                  <div>
+                    <p class="font-semibold text-lg">Python</p>
+                  </div>
+                  <div>
+                    <p class="text-gray-500 text-base">Intermediate</p>
+                  </div>
+                </div>
+
+                <!-- Keahlian Network Engineer -->
+                <div class="flex flex-col items-center justify-center gap-1">
+                  <div
+                    class="flex w-12 h-12 justify-center items-center transform transition-all duration-300 hover:scale-110"
+                  >
+                    <img src="dist/img/icon/icon-network.png" alt="Network Icon" />
+                  </div>
+                  <div>
+                    <p class="font-semibold text-lg">Network</p>
+                  </div>
+                  <div>
+                    <p class="text-gray-500 text-base">Intermediate</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center items-center mt-6 gap-6">
+          <a
+            href="https://www.instagram.com/aria_st/"
+            target="_blank"
+            class="transition-all duration-300 transform-gpu hover:-translate-y-1 hover:scale-100 active:scale-95 relative"
+          >
+            <!-- <i class="fab fa-instagram fa-2xl"></i> -->
+            <img src="dist/img/icon/icon-instagram.png" alt="Instagram Icon" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/aria-sena-trimulia/"
+            target="_blank"
+            class="transition-all duration-300 transform-gpu hover:-translate-y-1 hover:scale-100 active:scale-95 relative"
+          >
+            <!-- <i class="fab fa-linkedin fa-2xl"></i> -->
+            <img src="dist/img/icon/icon-linkedin.png" alt="linkedIn Icon" />
+          </a>
+          <a
+            href="https://wa.me/6285730037568"
+            target="_blank"
+            class="transition-all duration-300 transform-gpu hover:-translate-y-1 hover:scale-100 active:scale-95 relative"
+          >
+            <!-- <i class="fab fa-whatsapp fa-2xl"></i> -->
+            <img src="dist/img/icon/icon-whatsapp.png" alt="WhatsApp Icon" />
+          </a>
+        </div>
+        <div class="flex justify-center items-center mt-5">
+          <a href="dist/files/Cv-aria.pdf" download>
+            <button
+              class="bg-primary rounded-xl w-44 h-16 py-2 px-2 hover:bg-blue-500 active:bg-blue-100 transform transition duration-300 ease-in-out hover:-translate-y-1"
+            >
+              <i class="fa-solid fa-arrow-down fa-lg"></i>
+              <span class="ml-1 text-xl font-bold">Download CV</span>
+            </button>
+          </a>
+        </div>
+        <!-- percobaan end -->
       </div>
     </section>
     <!-- about me section end -->
 
     <!-- section timeline -->
-    <section class="timeline">
-      <!-- component -->
-      <div class="container bg-white mx-auto w-11/12 mb-10 rounded h-full shadow-xl">
-        <div class="relative wrap overflow-hidden p-10 h-full">
-          <div
-            class="border-2-2 absolute border-opacity-20 border-gray-700 h-full border"
-            style="left: 50%"
-          ></div>
-
-          <!-- right timeline -->
-          <div class="mb-8 flex justify-between items-center w-full right-timeline">
-            <div class="order-1 w-5/12"></div>
-            <div class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
-              <h1 class="mx-auto font-semibold text-lg text-white">1</h1>
-            </div>
+    <!-- component -->
+    <section class="timeline" id="timeline">
+      <div class="container bg-white mx-auto py-5 w-11/12 mb-10 rounded h-full shadow-xl">
+        <div class="flex flex-col md:grid grid-cols-9 mx-auto p-2 text-blue-50">
+          <!-- left -->
+          <div class="flex flex-row-reverse md:contents">
             <div
-              class="order-1 bg-primary rounded-lg shadow-xl w-5/12 px-6 py-4 cursor-pointer read-more"
+              class="bg-primary col-start-1 col-end-5 p-4 ms-5 rounded-xl my-4 ml-auto shadow-md cursor-pointer"
               data-modal-target="Modal-pengalaman1"
               data-modal-toggle="Modal-pengalaman1"
             >
-              <h3 class="mb-3 font-bold text-gray-800 text-xl">pengalaman 1</h3>
-              <p class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">
+              <h3 class="mb-3 font-bold text-gray-800 text-xl">PENGALAMAN 1</h3>
+              <p
+                class="text-base leading-snug tracking-wide pb-3 text-white text-opacity-100 line-clamp-6 overflow-auto sm:line-clamp-none text-justify"
+              >
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                 Ipsum has been the industry's standard dummy text ever since the 1500s, when an
                 unknown printer took a galley of type and scrambled it to make a type specimen book.
               </p>
+              <span
+                class="bg-blue-900 text-blue-200 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300"
+                >HTML
+              </span>
+              <span
+                class="bg-blue-600 text-blue-200 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300"
+                >HTML
+              </span>
               <p class="flex justify-end font-medium items-end pt-5 gap-x-2 text-white">
                 Read More
                 <svg
@@ -157,7 +436,14 @@
                 </svg>
               </p>
             </div>
+            <div class="col-start-5 col-end-5 md:mx-auto relative mr-10">
+              <div class="h-full w-6 flex items-center justify-center">
+                <div class="h-full w-1 bg-secondary pointer-events-none rounded-t-lg"></div>
+              </div>
+              <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-yellow shadow"></div>
+            </div>
           </div>
+
           <!-- modalbox1 -->
           <div
             id="Modal-pengalaman1"
@@ -219,209 +505,55 @@
           </div>
           <!-- modalbox1 end -->
 
-          <!-- left timeline 2-->
-          <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
-            <div class="order-1 w-5/12"></div>
-            <div class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
-              <h1 class="mx-auto text-white font-semibold text-lg">2</h1>
-            </div>
-            <div
-              class="order-1 bg-yellow rounded-lg shadow-xl w-5/12 px-6 py-4 cursor-pointer read-more"
-              data-modal-target="Modal-pengalaman2"
-              data-modal-toggle="Modal-pengalaman2"
-            >
-              <h3 class="mb-3 font-bold text-gray-900 text-xl">PENGALAMAN 2</h3>
-              <p
-                class="text-sm font-medium leading-snug tracking-wide text-gray-900 text-opacity-100"
-              >
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                unknown printer took a galley of type and scrambled it to make a type specimen book.
-              </p>
-              <p class="flex justify-end font-medium items-end pt-5 gap-x-2 text-secondary">
-                Read More
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-5 h-5"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
-                  />
-                </svg>
-              </p>
-            </div>
-          </div>
-          <!-- timeline2 end -->
-
-          <!-- modalbox2 -->
-          <div
-            id="Modal-pengalaman2"
-            tabindex="-1"
-            aria-hidden="true"
-            class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full"
-          >
-            <div class="relative w-full max-w-2xl max-h-full">
-              <!-- Modal content -->
-              <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                <!-- Modal header -->
-                <div
-                  class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600"
-                >
-                  <h3 class="text-xl font-semibold text-gray-900 dark:text-white">PENGALAMAN 2</h3>
-                  <button
-                    type="button"
-                    class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
-                    data-modal-hide="defaultModal"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      class="w-5 h-5"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
-                    <span class="sr-only">Close modal</span>
-                  </button>
-                </div>
-                <!-- Modal body -->
-                <div class="p-6 space-y-6">
-                  <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                    With less than a month to go before the European Union enacts new consumer
-                    privacy laws for its citizens, companies around the world are updating their
-                    terms of service agreements to comply.
-                  </p>
-                  <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                    The European Union’s General Data Protection Regulation (G.D.P.R.) goes into
-                    effect on May 25 and is meant to ensure a common set of data rights in the
-                    European Union. It requires organizations to notify users as soon as possible of
-                    high-risk data breaches that could personally affect them.
-                  </p>
-                </div>
-                <!-- Modal footer -->
-                <div
-                  class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600"
-                >
-                  <p>ini adalah footer</p>
-                </div>
+          <!-- right -->
+          <div class="flex md:contents">
+            <div class="col-start-5 col-end-6 mr-10 md:mx-auto relative">
+              <div class="h-full w-6 flex items-center justify-center">
+                <div class="h-full w-1 bg-blue-800 pointer-events-none"></div>
               </div>
+              <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-blue-500 shadow"></div>
             </div>
-          </div>
-          <!-- modalbox2 end -->
-
-          <!-- right timeline 3 -->
-          <div class="mb-8 flex justify-between items-center w-full right-timeline">
-            <div class="order-1 w-5/12"></div>
-            <div class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
-              <h1 class="mx-auto font-semibold text-lg text-white">3</h1>
-            </div>
-            <div
-              class="order-1 bg-gray-400 rounded-lg shadow-xl w-5/12 px-6 py-4 cursor-pointer read-more"
-              data-modal-target="Modal-pengalaman3"
-              data-modal-toggle="Modal-pengalaman3"
-            >
-              <h3 class="mb-3 font-bold text-gray-800 text-xl">PENGALAMAN 3</h3>
-              <p class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                unknown printer took a galley of type and scrambled it to make a type specimen book.
-              </p>
-              <p class="flex justify-end font-medium items-end pt-5 gap-x-2 text-white">
-                Read More
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-5 h-5"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
-                  />
-                </svg>
+            <div class="bg-blue-500 col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md">
+              <h3 class="font-semibold text-lg mb-1">Lorem ipsum</h3>
+              <p class="leading-tight text-justify">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, facilis.
               </p>
             </div>
           </div>
-          <!-- end timeline3 -->
-
-          <!-- modal box3 -->
-          <div
-            id="Modal-pengalaman3"
-            tabindex="-1"
-            aria-hidden="true"
-            class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full"
-          >
-            <div class="relative w-full max-w-2xl max-h-full">
-              <!-- Modal content -->
-              <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                <!-- Modal header -->
-                <div
-                  class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600"
-                >
-                  <h3 class="text-xl font-semibold text-gray-900 dark:text-white">PENGALAMAN 3</h3>
-                  <button
-                    type="button"
-                    class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
-                    data-modal-hide="defaultModal"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      class="w-5 h-5"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
-                    <span class="sr-only">Close modal</span>
-                  </button>
-                </div>
-                <!-- Modal body -->
-                <div class="p-6 space-y-6">
-                  <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                    With less than a month to go before the European Union enacts new consumer
-                    privacy laws for its citizens, companies around the world are updating their
-                    terms of service agreements to comply.
-                  </p>
-                  <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                    The European Union’s General Data Protection Regulation (G.D.P.R.) goes into
-                    effect on May 25 and is meant to ensure a common set of data rights in the
-                    European Union. It requires organizations to notify users as soon as possible of
-                    high-risk data breaches that could personally affect them.
-                  </p>
-                </div>
-                <!-- Modal footer -->
-                <div
-                  class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600"
-                >
-                  <p>ini adalah footer</p>
-                </div>
+          <!-- left -->
+          <div class="flex flex-row-reverse md:contents">
+            <div class="bg-blue-500 col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md">
+              <h3 class="font-semibold text-lg mb-1">Lorem ipsum</h3>
+              <p class="leading-tight text-justify">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, quaerat?
+              </p>
+            </div>
+            <div class="col-start-5 col-end-6 md:mx-auto relative mr-10">
+              <div class="h-full w-6 flex items-center justify-center">
+                <div class="h-full w-1 bg-blue-800 pointer-events-none"></div>
               </div>
+              <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-blue-500 shadow"></div>
             </div>
           </div>
-          <!-- modal box3 end -->
+
+          <!-- right -->
+          <div class="flex md:contents">
+            <div class="col-start-5 col-end-6 mr-10 md:mx-auto relative">
+              <div class="h-full w-6 flex items-center justify-center">
+                <div class="h-full w-1 bg-blue-800 pointer-events-none rounded-b-lg"></div>
+              </div>
+              <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-blue-500 shadow"></div>
+            </div>
+            <div class="bg-blue-500 col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md">
+              <h3 class="font-semibold text-lg mb-1">Lorem ipsum</h3>
+              <p class="leading-tight text-justify">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, facilis.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-
     <!-- section timeline end -->
     <script src="dist/js/script.js"></script>
     <script src="node_modules/flowbite/dist/flowbite.min.js"></script>

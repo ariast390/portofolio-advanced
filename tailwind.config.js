@@ -9,6 +9,7 @@ module.exports = {
         white: "#E8F6EF",
         yellow: "#FFE194",
         dark: "#0f172a",
+        blue_button: "#1b439c",
       },
       screens: {
         "2xl": "1320px",
