@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -23,8 +23,10 @@
       <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
         <div class="relative flex items-center justify-between h-14">
           <!-- Logo -->
-          <div class="flex-shrink-0 visible sm:invisible">
-            <a href="#" class="text-dark text-2xl font-semibold">Aria Portfolio's </a>
+          <div class="flex-shrink-0">
+            <a href="#" class="text-dark text-3xl font-bold"
+              >Aria <span class="text-red-900"> Blog's</span>
+            </a>
           </div>
 
           <!-- Mobile menu button -->
@@ -137,11 +139,13 @@
               to keep growing.
             </p>
 
-            <button
-              class="bg-blue-500 hover:bg-white hover:text-dark active:bg-blue-800 text-white font-bold py-2 px-4 rounded-full modal-open transition-all duration-300 transform-gpu hover:-translate-y-1 hover:scale-100 active:scale-95"
-            >
-              Hubungi saya
-            </button>
+            <a href="#contact-me">
+              <button
+                class="bg-blue-500 hover:bg-white hover:text-dark active:bg-blue-800 text-white font-bold py-2 px-4 rounded-full modal-open transition-all duration-300 transform-gpu hover:-translate-y-1 hover:scale-100 active:scale-95"
+              >
+                Hubungi saya
+              </button>
+            </a>
           </div>
           <div class="w-full self-center px-4 lg:w-1/2 relative">
             <object data="dist/img/hand-coding-animate-laptop.svg "></object>
@@ -369,7 +373,7 @@
             class="transition-all duration-300 transform-gpu hover:-translate-y-1 hover:scale-100 active:scale-95 relative"
           >
             <!-- <i class="fab fa-instagram fa-2xl"></i> -->
-            <img src="dist/img/icon/icon-instagram.png" alt="Instagram Icon" />
+            <img src="dist/img/icon/icon-instagram-circle.png" alt="Instagram Icon" class="w-10" />
           </a>
           <a
             href="https://www.linkedin.com/in/aria-sena-trimulia/"
@@ -377,7 +381,7 @@
             class="transition-all duration-300 transform-gpu hover:-translate-y-1 hover:scale-100 active:scale-95 relative"
           >
             <!-- <i class="fab fa-linkedin fa-2xl"></i> -->
-            <img src="dist/img/icon/icon-linkedin.png" alt="linkedIn Icon" />
+            <img src="dist/img/icon/icon-linkedin-circle.png" alt="linkedIn Icon" />
           </a>
           <a
             href="https://wa.me/6285730037568"
@@ -405,34 +409,34 @@
 
     <!--timeline section -->
     <section
-      class="my-0 md:mt-32 md:mx-8 md:rounded-3xl md:pt-24 bg-[#1B1B1B] shadow-xl"
+      class="my-0 md:mt-32 md:mx-8 md:rounded-3xl md:pt-24 bg-[#E3F4F4] shadow-xl"
       id="timeline"
     >
       <div class="flex justify-center mx-auto">
-        <p class="text-4xl sm:text-7xl mb-5 sm:mb-0 font-bold text-slate-50 tracking-widest">
+        <p class="text-4xl sm:text-7xl mb-5 sm:mb-0 font-bold text-slate-900 tracking-widest">
           My Journey
         </p>
       </div>
 
-      <div class="text-slate-50 py-5 sm:py-0 px-5 -mt-24 md:-mt-0">
+      <div class="text-slate-900 py-5 sm:py-0 px-5 -mt-24 md:-mt-0">
         <div class="container mx-auto flex flex-col items-start md:flex-row my-12 md:my-24">
           <div
             class="flex flex-col w-full sticky md:top-36 lg:w-1/3 mt-2 md:mt-12 px-0 sm:px-8 py-10"
           >
-            <p class="ml-2 text-slate-50 uppercase tracking-loose font-bold">Working Process</p>
+            <p class="ml-2 text-slate-900 uppercase tracking-loose font-bold">Working Process</p>
             <p class="text-3xl md:text-4xl leading-normal md:leading-relaxed mb-2">
               Working Process of Fest
             </p>
-            <p class="text-sm md:text-base text-white mb-4">
+            <p class="text-sm md:text-base text-slate-900 mb-4">
               Here’s your guide to the tech fest 2021 process. Go through all the steps to know the
               exact process of the fest.
             </p>
-            <a
+            <!-- <a
               href="#"
               class="bg-white mr-auto text-dark hover:bg-slate-500 hover:text-white rounded shadow hover:shadow-lg py-2 px-4 border border-slate-700 hover:border-slate-500 duration-200"
             >
               Explore Now
-            </a>
+            </a> -->
           </div>
 
           <div class="ml-0 md:ml-0 lg:w-2/3">
@@ -441,15 +445,15 @@
                 <!-- left -->
                 <div class="flex flex-row-reverse md:contents">
                   <div
-                    class="col-start-1 col-end-5 p-4 ms-5 sm:ms-0 rounded-xl my-4 ml-auto cursor-pointer hover:bg-slate-800 hover:shadow-xl hover:shadow-neutral-100/5 duration-500"
+                    class="col-start-1 col-end-5 p-4 ms-5 sm:ms-0 rounded-xl my-4 ml-auto cursor-pointer hover:bg-slate-300 hover:shadow-xl hover:shadow-neutral-300/50 duration-500"
                     data-modal-target="Modal-pengalaman1"
                     data-modal-toggle="Modal-pengalaman1"
                   >
-                    <h3 class="mb-3 font-bold text-white text-base sm:text-2xl">
-                      PENGALAMAN 1 Jobs
+                    <h3 class="mb-3 font-bold text-slate-900 text-base sm:text-2xl">
+                      PENGALAMAN 1
                     </h3>
                     <p
-                      class="text-base leading-snug tracking-wide pb-3 text-white line-clamp-6 overflow-auto md:line-clamp-5 md:overflow-auto lg:line-clamp-none text-justify"
+                      class="text-base leading-snug tracking-wide pb-3 text-slate-900 line-clamp-6 overflow-auto md:line-clamp-5 md:overflow-auto lg:line-clamp-none text-justify"
                     >
                       Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                       Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
@@ -466,15 +470,19 @@
                         >HTML
                       </span>
                     </div>
-                    <p class="flex justify-end font-medium items-center pt-5 gap-x-2 text-white">
+                    <p
+                      class="flex justify-end font-medium items-center pt-5 gap-x-2 text-slate-900"
+                    >
                       Read More <i class="fa-solid fa-arrow-right"></i>
                     </p>
                   </div>
                   <div class="col-start-5 col-end-5 md:mx-auto relative">
                     <div class="h-full w-6 flex items-center justify-center">
-                      <div class="h-full w-2 bg-third pointer-events-none rounded-t-lg"></div>
+                      <div class="h-full w-2 bg-secondary pointer-events-none rounded-t-lg"></div>
                     </div>
-                    <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-white shadow"></div>
+                    <div
+                      class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-[#F4B266] shadow"
+                    ></div>
                   </div>
                 </div>
 
@@ -482,20 +490,22 @@
                 <div class="flex md:contents">
                   <div class="col-start-5 col-end-6 mr-5 md:mx-auto relative">
                     <div class="h-full w-6 flex items-center justify-center">
-                      <div class="h-full w-2 bg-third pointer-events-none"></div>
+                      <div class="h-full w-2 bg-secondary pointer-events-none"></div>
                     </div>
-                    <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-white shadow"></div>
+                    <div
+                      class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-[#F4B266] shadow"
+                    ></div>
                   </div>
                   <div
-                    class="col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto cursor-pointer hover:bg-green-900 hover:shadow-xl hover:shadow-neutral-100/5 duration-500"
+                    class="col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto cursor-pointer hover:bg-green-300 hover:shadow-xl hover:shadow-neutral-100/5 duration-500"
                     data-modal-target="Modal-pengalaman2"
                     data-modal-toggle="Modal-pengalaman2"
                   >
-                    <h3 class="mb-3 font-bold text-white text-base sm:text-2xl">
-                      PENGALAMAN 2 school
+                    <h3 class="mb-3 font-bold text-slate-900 text-base sm:text-2xl">
+                      PENGALAMAN 2
                     </h3>
                     <p
-                      class="text-base leading-snug tracking-wide pb-3 text-white line-clamp-6 overflow-auto md:line-clamp-5 md:overflow-auto lg:line-clamp-none text-justify"
+                      class="text-base leading-snug tracking-wide pb-3 text-slate-900 line-clamp-6 overflow-auto md:line-clamp-5 md:overflow-auto lg:line-clamp-none text-justify"
                     >
                       Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                       Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
@@ -512,7 +522,9 @@
                         >HTML
                       </span>
                     </div>
-                    <p class="flex justify-end font-medium items-center pt-5 gap-x-2 text-white">
+                    <p
+                      class="flex justify-end font-medium items-center pt-5 gap-x-2 text-slate-900"
+                    >
                       Read More <i class="fa-solid fa-arrow-right"></i>
                     </p>
                   </div>
@@ -525,9 +537,11 @@
                     data-modal-target="Modal-pengalaman1"
                     data-modal-toggle="Modal-pengalaman1"
                   >
-                    <h3 class="mb-3 font-bold text-white text-base sm:text-2xl">PENGALAMAN 3</h3>
+                    <h3 class="mb-3 font-bold text-slate-900 text-base sm:text-2xl">
+                      PENGALAMAN 3
+                    </h3>
                     <p
-                      class="text-base leading-snug tracking-wide pb-3 text-white line-clamp-6 overflow-auto md:line-clamp-5 md:overflow-auto lg:line-clamp-none text-justify"
+                      class="text-base leading-snug tracking-wide pb-3 text-slate-900 line-clamp-6 overflow-auto md:line-clamp-5 md:overflow-auto lg:line-clamp-none text-justify"
                     >
                       Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                       Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
@@ -544,15 +558,19 @@
                         >HTML
                       </span>
                     </div>
-                    <p class="flex justify-end font-medium items-center pt-5 gap-x-2 text-white">
+                    <p
+                      class="flex justify-end font-medium items-center pt-5 gap-x-2 text-slate-900"
+                    >
                       Read More <i class="fa-solid fa-arrow-right"></i>
                     </p>
                   </div>
                   <div class="col-start-5 col-end-5 md:mx-auto relative">
                     <div class="h-full w-6 flex items-center justify-center">
-                      <div class="h-full w-2 bg-third pointer-events-none"></div>
+                      <div class="h-full w-2 bg-secondary pointer-events-none"></div>
                     </div>
-                    <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-white shadow"></div>
+                    <div
+                      class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-[#F4B266] shadow"
+                    ></div>
                   </div>
                 </div>
 
@@ -560,18 +578,22 @@
                 <div class="flex md:contents">
                   <div class="col-start-5 col-end-6 mr-5 md:mx-auto relative">
                     <div class="h-full w-6 flex items-center justify-center">
-                      <div class="h-full w-2 bg-third pointer-events-none"></div>
+                      <div class="h-full w-2 bg-secondary pointer-events-none rounded-b-lg"></div>
                     </div>
-                    <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-white shadow"></div>
+                    <div
+                      class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-[#F4B266] shadow"
+                    ></div>
                   </div>
                   <div
-                    class="col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto cursor-pointer hover:bg-green-900 hover:shadow-xl hover:shadow-neutral-100/5 duration-500"
+                    class="col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto cursor-pointer hover:bg-green-300 hover:shadow-xl hover:shadow-neutral-100/5 duration-500"
                     data-modal-target="Modal-pengalaman1"
                     data-modal-toggle="Modal-pengalaman1"
                   >
-                    <h3 class="mb-3 font-bold text-white text-base sm:text-2xl">PENGALAMAN 4</h3>
+                    <h3 class="mb-3 font-bold text-slate-900 text-base sm:text-2xl">
+                      PENGALAMAN 4
+                    </h3>
                     <p
-                      class="text-base leading-snug tracking-wide pb-3 text-white line-clamp-6 overflow-auto md:line-clamp-5 md:overflow-auto lg:line-clamp-none text-justify"
+                      class="text-base leading-snug tracking-wide pb-3 text-slate-900text-white line-clamp-6 overflow-auto md:line-clamp-5 md:overflow-auto lg:line-clamp-none text-justify"
                     >
                       Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                       Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
@@ -588,7 +610,9 @@
                         >HTML
                       </span>
                     </div>
-                    <p class="flex justify-end font-medium items-center pt-5 gap-x-2 text-white">
+                    <p
+                      class="flex justify-end font-medium items-center pt-5 gap-x-2 text-slate-900"
+                    >
                       Read More <i class="fa-solid fa-arrow-right"></i>
                     </p>
                   </div>
@@ -837,9 +861,28 @@
       </p>
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
         <div class="p-0 sm:p-8">
-          <h3 class="text-xl font-bold mb-4">Informasi Kontak</h3>
-          <p>Nomor Telepon: 123456789</p>
-          <p>Alamat: Jalan Contoh, Kota Contoh</p>
+          <div class="flex gap-2">
+            <i class="fa-solid fa-phone fa-2xl" style="color: #1658ca"></i>
+            <div class="col -mt-7 ml-2">
+              <p class="font-bold text-2xl">Phone</p>
+              <p class="text-xl text-slate-500">111-111-111</p>
+            </div>
+          </div>
+          <div class="flex gap-2 mt-20">
+            <i class="fa-solid fa-envelope fa-2xl" style="color: #1658ca"></i>
+            <div class="col -mt-7 ml-2">
+              <p class="font-bold text-2xl">Email</p>
+              <p class="text-xl text-slate-500">test@gmail.com</p>
+            </div>
+          </div>
+          <div class="flex gap-2 mt-20">
+            <i class="fa-solid fa-location-dot fa-2xl" style="color: #1658ca"></i>
+            <div class="col -mt-7 ml-2">
+              <p class="font-bold text-2xl">Location</p>
+              <p class="text-xl text-slate-500">Malang, Indonesia</p>
+            </div>
+          </div>
+
           <!-- Tambahkan informasi kontak lainnya sesuai kebutuhan -->
         </div>
         <div class="p-3 sm:p-8">
