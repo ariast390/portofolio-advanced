@@ -9,22 +9,23 @@ mobileMenuButton.addEventListener("click", () => {
 });
 
 // Event listener untuk dokumen
-document.addEventListener("click", (event) => {
-  const isClickInsideMobileMenu = mobileMenu.contains(event.target);
-  const isClickInsideMobileMenuButton = mobileMenuButton.contains(event.target);
+// document.addEventListener("click", (event) => {
+//   const isClickInsideMobileMenu = mobileMenu.contains(event.target);
+//   const isClickInsideMobileMenuButton = mobileMenuButton.contains(event.target);
 
-  // Jika klik diluar kotak mobile menu dan mobile menu button, sembunyikan mobile menu
-  if (!isClickInsideMobileMenu && !isClickInsideMobileMenuButton) {
-    mobileMenu.classList.add("hidden");
-    mobileMenuButton.setAttribute("aria-expanded", false);
-  }
-});
+//   // Jika klik diluar kotak mobile menu dan mobile menu button, sembunyikan mobile menu
+//   if (!isClickInsideMobileMenu && !isClickInsideMobileMenuButton) {
+//     mobileMenu.classList.add("hidden");
+//     mobileMenuButton.setAttribute("aria-expanded", false);
+//   }
+// });
 
 // border Navbar while Scrolling
 const navbar = document.querySelector("nav");
+let scrollPosition = 0;
 
 window.addEventListener("scroll", () => {
-  const scrollPosition = window.scrollY;
+  scrollPosition = window.scrollY;
 
   if (scrollPosition > 0) {
     navbar.classList.add("scroll-border");
@@ -32,4 +33,5 @@ window.addEventListener("scroll", () => {
     navbar.classList.remove("scroll-border");
   }
 });
+
 // border navbar end

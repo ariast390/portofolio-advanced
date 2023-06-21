@@ -9,9 +9,13 @@
     <link rel="stylesheet" href="src/bg2.css" />
     <script src="https://kit.fontawesome.com/021eda2c9b.js" crossorigin="anonymous"></script>
 
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- AOS end -->
+
     <title>Document</title>
   </head>
-  <body class="overflow-x-hidden scroll-smooth">
+  <body class="overflow-x-hidden">
     <!-- <section
       id="home"
       class="pt-28 bg-cover relative"
@@ -19,13 +23,13 @@
     > -->
 
     <!-- navbar -->
-    <nav class="bg-transparent fixed top-0 left-0 right-0 py-1 z-50 scroll-border">
+    <nav class="w-screen bg-transparent fixed top-0 left-0 right-0 py-1 z-50 scroll-border">
       <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
         <div class="relative flex items-center justify-between h-14">
           <!-- Logo -->
           <div class="flex-shrink-0">
-            <a href="#" class="text-dark text-3xl font-bold"
-              >Aria <span class="text-red-900"> Blog's</span>
+            <a href="#" class="text-dark text-3xl md:text-lg lg:text-3xl font-bold"
+              >Aria<span class="text-red-900">Blog's</span>
             </a>
           </div>
 
@@ -61,31 +65,31 @@
             <div class="flex">
               <a
                 href="#home"
-                class="text-[#2C3333] hover:text-[#53aaaa] px-3 py-2 rounded text-lg font-bold duration-150"
+                class="text-[#2C3333] hover:text-[#53aaaa] hover:bg-slate-900 px-3 py-2 rounded sm:text-lg md:text-base lg:text-xl font-bold duration-300"
                 >Home</a
               >
               <span class="px-3 py-2 text-gray-300 text-base">|</span>
               <a
                 href="#about-me"
-                class="text-[#2C3333] hover:text-[#53aaaa] px-3 py-2 rounded-md text-lg font-bold duration-150"
+                class="text-[#2C3333] hover:text-[#53aaaa] hover:bg-slate-900 px-3 py-2 rounded-md sm:text-lg md:text-base lg:text-xl font-bold duration-300"
                 >About Me</a
               >
               <span class="px-3 py-2 text-white text-lg">|</span>
               <a
                 href="#timeline"
-                class="text-[#2C3333] hover:text-[#53aaaa] px-3 py-2 rounded-md text-lg font-bold duration-150"
+                class="text-[#2C3333] hover:text-[#53aaaa] hover:bg-slate-900 px-3 py-2 rounded-md sm:text-lg md:text-base lg:text-xl font-bold duration-300"
                 >My Journey</a
               >
               <span class="px-3 py-2 text-white text-lg">|</span>
               <a
                 href="#portfolio"
-                class="text-[#2C3333] hover:text-[#53aaaa] px-3 py-2 rounded-md text-lg font-bold duration-150"
+                class="text-[#2C3333] hover:text-[#53aaaa] hover:bg-slate-900 px-3 py-2 rounded-md sm:text-lg md:text-base lg:text-xl font-bold duration-300"
                 >Portfolio</a
               >
               <span class="px-3 py-2 text-white text-lg">|</span>
               <a
                 href="#contact-me"
-                class="text-[#2C3333] hover:text-[#53aaaa] px-3 py-2 rounded-md text-lg font-bold duration-150"
+                class="text-[#2C3333] hover:text-[#53aaaa] hover:bg-slate-900 px-3 py-2 rounded-md sm:text-lg md:text-base lg:text-xl font-bold duration-300"
                 >Contact Me</a
               >
             </div>
@@ -96,24 +100,33 @@
       <!-- Mobile menu -->
       <div
         id="mobile-menu"
-        class="hidden sm:hidden absolute bg-white py-5 shadow-lg rounded-lg max-w-[250px] w-full right-4"
+        class="hidden sm:hidden absolute bg-white py-2 shadow-xl rounded-lg max-w-[250px] w-full right-4"
       >
         <div class="px-2 pt-2 pb-3 space-y-1">
           <a
-            href="#"
-            class="text-dark hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-xl font-bold"
+            href="#home"
+            class="text-[#2C3333] hover:text-[#53aaaa] hover:bg-gray-700 px-3 py-2 rounded text-lg font-bold duration-150 flex justify-center items-start"
             >Home</a
           >
-
           <a
-            href="#"
-            class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-            >Menu 2</a
+            href="#about-me"
+            class="text-[#2C3333] hover:text-[#53aaaa] hover:bg-gray-700 px-3 py-2 rounded text-lg font-bold duration-150 flex justify-center items-start"
+            >About Me</a
           >
           <a
-            href="#"
-            class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-            >Menu 3</a
+            href="#timeline"
+            class="text-[#2C3333] hover:text-[#53aaaa] hover:bg-gray-700 px-3 py-2 rounded text-lg font-bold duration-150 flex justify-center items-start"
+            >My Journey</a
+          >
+          <a
+            href="#portfolio"
+            class="text-[#2C3333] hover:text-[#53aaaa] hover:bg-gray-700 px-3 py-2 rounded text-lg font-bold duration-150 flex justify-center items-start"
+            >Portfolio</a
+          >
+          <a
+            href="#contact-me"
+            class="text-[#2C3333] hover:text-[#53aaaa] hover:bg-gray-700 px-3 py-2 rounded text-lg font-bold duration-150 flex justify-center items-start"
+            >Contact Me</a
           >
         </div>
       </div>
@@ -175,8 +188,13 @@
     <section
       class="flex flex-wrap items-center justify-center mx-auto mt-28 pb-4 bg-slate-100"
       id="about-me"
+      data-aos="fade-in"
     >
-      <div class="w-full md:w-1/2 pt-20 px-3 mt-36 md:pt-56 md:-mt-28">
+      <div
+        class="w-full md:w-1/2 pt-20 px-3 mt-36 md:pt-56 md:-mt-28"
+        data-aos="fade-right"
+        data-aos-duration="1000"
+      >
         <div class="text-center md:text-left">
           <div class="relative -mt-64">
             <img
@@ -197,13 +215,23 @@
       <div
         class="w-full my-1 flex flex-col justify-start items-start rounded-2xl p-8 md:-mt-3 md:w-1/2 lg:my-0"
       >
-        <h2 class="text-2xl sm:text-4xl font-bold mb-4 mx-4 pt-10 sm:pt-0">
+        <h2
+          class="text-2xl sm:text-4xl font-bold mb-4 mx-4 pt-10 sm:pt-0"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+        >
           Mengenal Saya Lebih Dekat
         </h2>
         <div class="border-2 border-secondary rounded w-full"></div>
 
         <!-- accordion -->
-        <div id="accordion-collapse" data-accordion="collapse" class="my-5 w-full shadow-sm">
+        <div
+          id="accordion-collapse"
+          data-accordion="collapse"
+          class="my-5 w-full shadow-sm"
+          data-aos="fade-down"
+          data-aos-duration="1000"
+        >
           <h2 id="accordion-collapse-heading-1">
             <button
               type="button"
@@ -366,7 +394,13 @@
             </div>
           </div>
         </div>
-        <div class="flex justify-center items-center mt-6 gap-6">
+        <div
+          class="flex justify-center items-center mt-6 gap-6"
+          data-aos="fade-up"
+          data-aos-delay="50"
+          data-aos-offset="100"
+          data-aos-duration="1000"
+        >
           <a
             href="https://www.instagram.com/aria_st/"
             target="_blank"
@@ -392,7 +426,12 @@
             <img src="dist/img/icon/icon-whatsapp.png" alt="WhatsApp Icon" />
           </a>
         </div>
-        <div class="flex justify-center items-center mt-5">
+        <div
+          class="flex justify-center items-center mt-5"
+          data-aos="fade-in"
+          data-aos-duration="1000"
+          data-aos-offset="10"
+        >
           <a href="dist/files/Cv-aria.pdf" download>
             <button
               class="bg-primary rounded-xl w-44 h-16 py-2 px-2 hover:bg-blue-500 active:bg-blue-100 transform transition duration-300 ease-in-out hover:-translate-y-1"
@@ -423,20 +462,9 @@
           <div
             class="flex flex-col w-full sticky md:top-36 lg:w-1/3 mt-2 md:mt-12 px-0 sm:px-8 py-10"
           >
-            <p class="ml-2 text-slate-900 uppercase tracking-loose font-bold">Working Process</p>
-            <p class="text-3xl md:text-4xl leading-normal md:leading-relaxed mb-2">
-              Working Process of Fest
+            <p class="text-2xl sm:text-3xl leading-normal md:leading-relaxed mb-2">
+              "Embrace challenges, chase dreams, and let your passion ignite a brighter tomorrow."
             </p>
-            <p class="text-sm md:text-base text-slate-900 mb-4">
-              Here’s your guide to the tech fest 2021 process. Go through all the steps to know the
-              exact process of the fest.
-            </p>
-            <!-- <a
-              href="#"
-              class="bg-white mr-auto text-dark hover:bg-slate-500 hover:text-white rounded shadow hover:shadow-lg py-2 px-4 border border-slate-700 hover:border-slate-500 duration-200"
-            >
-              Explore Now
-            </a> -->
           </div>
 
           <div class="ml-0 md:ml-0 lg:w-2/3">
@@ -449,25 +477,37 @@
                     data-modal-target="Modal-pengalaman1"
                     data-modal-toggle="Modal-pengalaman1"
                   >
-                    <h3 class="mb-3 font-bold text-slate-900 text-base sm:text-2xl">
-                      PENGALAMAN 1
-                    </h3>
+                    <p class="font-bold text-slate-900 text-base sm:text-2xl uppercase">
+                      Software Engineer
+                    </p>
+                    <p class="mb-3 text-slate-600 -mt-1">Internship</p>
                     <p
-                      class="text-base leading-snug tracking-wide pb-3 text-slate-900 line-clamp-6 overflow-auto md:line-clamp-5 md:overflow-auto lg:line-clamp-none text-justify"
+                      class="text-base leading-snug tracking-wide pb-3 text-slate-900 line-clamp-6 overflow-auto text-justify"
                     >
-                      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                      when an unknown printer took a galley of type and scrambled it to make a type
-                      specimen book.
+                      Testing custom Raspberry Pi PCB Board and Gaining Semiconductor Literacy from
+                      Intel in "Pengembangan Laptop Merah Putih" Project
                     </p>
                     <div class="my-2 sm:my-0">
                       <span
-                        class="bg-blue-900 text-blue-200 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300"
+                        class="bg-blue-600 text-slate-100 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full"
                         >HTML
                       </span>
+
                       <span
-                        class="bg-blue-600 text-blue-200 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300"
-                        >HTML
+                        class="bg-blue-900 text-slate-100 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full"
+                        >PYTHON
+                      </span>
+                      <span
+                        class="bg-pink-600 text-slate-100 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full"
+                        >RASPBERRY PI
+                      </span>
+                      <span
+                        class="bg-teal-600 text-slate-100 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full"
+                        >ARDUINO
+                      </span>
+                      <span
+                        class="bg-orange-600 text-slate-100 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full"
+                        >FIREBASE
                       </span>
                     </div>
                     <p
@@ -533,7 +573,7 @@
                 <!-- left 3-->
                 <div class="flex flex-row-reverse md:contents">
                   <div
-                    class="col-start-1 col-end-5 p-4 ms-5 sm:ms-0 rounded-xl my-4 ml-auto cursor-pointer hover:bg-slate-800 hover:shadow-xl hover:shadow-neutral-100/5 duration-500"
+                    class="col-start-1 col-end-5 p-4 ms-5 sm:ms-0 rounded-xl my-4 ml-auto cursor-pointer hover:bg-slate-300 hover:shadow-xl hover:shadow-neutral-100/5 duration-500"
                     data-modal-target="Modal-pengalaman1"
                     data-modal-toggle="Modal-pengalaman1"
                   >
@@ -606,8 +646,16 @@
                         >HTML
                       </span>
                       <span
+                        class="bg-blue-900 text-blue-200 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300"
+                        >Python
+                      </span>
+                      <span
                         class="bg-blue-600 text-blue-200 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300"
-                        >HTML
+                        >Arduino
+                      </span>
+                      <span
+                        class="bg-blue-600 text-blue-200 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300"
+                        >Firebase
                       </span>
                     </div>
                     <p
@@ -643,9 +691,13 @@
           <div
             class="flex items-start justify-between p-2 md:p-4 border-b rounded-t dark:border-gray-600"
           >
-            <h3 class="text-base md:text-xl font-semibold text-gray-900 dark:text-white">
-              Terms of Service
-            </h3>
+            <div class="flex-col">
+              <p class="text-xl sm:text-2xl font-semibold text-gray-900 dark:text-white">
+                Software Engineer Internship
+              </p>
+              <p class="text-slate-600">2022-2023</p>
+            </div>
+
             <button
               type="button"
               class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
@@ -668,25 +720,33 @@
             </button>
           </div>
           <!-- Modal body -->
-          <div class="p-6 space-y-6 line-clamp-[9] md:line-clamp-none overflow-auto text-justify">
-            <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-              With less than a month to go before the European Union enacts new consumer privacy
-              laws for its citizens, companies around the world are updating their terms of service
-              agreements to comply.
+          <div class="p-6 space-y-6 line-clamp-[9] sm:line-clamp-none overflow-auto text-justify">
+            <p class="text-base leading-relaxed text-gray-600">
+              I am part of the software engineering team in the "Pengembangan Laptop Merah Putih"
+              project, which serves as the foundation for my internship. Our team is divided into
+              three divisions. My role within the team is to conduct testing on the Raspberry Pi's
+              distinct PCB board, which was designed by the hardware engineering team. Additionally,
+              I have the opportunity to gain knowledge about "semiconductor literacy" directly from
+              Intel.
             </p>
-            <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-              The European Union’s General Data Protection Regulation (G.D.P.R.) goes into effect on
-              May 25 and is meant to ensure a common set of data rights in the European Union. It
-              requires organizations to notify users as soon as possible of high-risk data breaches
-              that could personally affect them.
-            </p>
+            <ul class="list-disc list-inside pt-32 sm:pt-0 text-gray-600">
+              <li class="py-6 sm:py-0">
+                Hardware Testing (IC troubleshooting, peripheral/port testing)
+              </li>
+              <li class="py-6 sm:py-0">Software testing (OS testing, troubleshooting)</li>
+              <li class="py-1 sm:py-0">Making dummy website IOT dashboards with firebase</li>
+            </ul>
+
+            <!-- <img
+              class="w-3/4 mb-6"
+              src="dist/img/Aria Sena SERTIFIKAT LOGICOM_pages-to-jpg-0001.jpg"
+              alt="Project A"
+            /> -->
           </div>
           <!-- Modal footer -->
           <div
             class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600"
-          >
-            <p>Ini adalah footer</p>
-          </div>
+          ></div>
         </div>
       </div>
     </div>
@@ -853,7 +913,7 @@
     <!-- section portfolio end -->
 
     <!-- section hubungi saya -->
-    <section class="h-screen w-full bg-gray-100 mt-16 px-3 sm:px-32" id="contact-me">
+    <section class="w-full bg-gray-100 mt-16 pb-16 px-3 lg:px-32" id="contact-me">
       <p
         class="text-3xl sm:text-7xl font-bold tracking-widest text-center py-10 sm:py-1 sm:pb-20 mt-10"
       >
@@ -861,15 +921,19 @@
       </p>
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
         <div class="p-0 sm:p-8">
-          <div class="flex gap-2">
+          <div class="flex gap-2 hover:translate-y-[-5px] duration-500">
             <i class="fa-solid fa-phone fa-2xl" style="color: #1658ca"></i>
             <div class="col -mt-7 ml-2">
               <p class="font-bold text-2xl">Phone</p>
               <p class="text-xl text-slate-500">111-111-111</p>
             </div>
           </div>
+
           <div class="flex gap-2 mt-20">
-            <i class="fa-solid fa-envelope fa-2xl" style="color: #1658ca"></i>
+            <i
+              class="fa-solid fa-envelope fa-2xl duration-300 transform-gpu hover:-translate-y-1 hover:scale-100 active:scale-95 relative"
+              style="color: #1658ca"
+            ></i>
             <div class="col -mt-7 ml-2">
               <p class="font-bold text-2xl">Email</p>
               <p class="text-xl text-slate-500">test@gmail.com</p>
@@ -887,8 +951,8 @@
         </div>
         <div class="p-3 sm:p-8">
           <form action="https://formsubmit.co/c323d236dd39843a9f8e71ee2522a6d8" method="POST">
-            <div class="flex mb-4">
-              <div class="w-1/2 pr-4">
+            <div class="flex flex-col sm:flex-row gap-4">
+              <div class="w-full sm:w-1/2">
                 <div class="relative z-0 mb-6 group">
                   <input
                     type="text"
@@ -901,11 +965,11 @@
                   <label
                     for="floating_nama"
                     class="peer-focus:font-bold absolute text-xl text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-8 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-8"
-                    >Nama
-                  </label>
+                    >Name</label
+                  >
                 </div>
               </div>
-              <div class="w-1/2 pl-4">
+              <div class="w-full sm:w-1/2">
                 <div class="relative z-0 mb-6 group">
                   <input
                     type="email"
@@ -918,11 +982,12 @@
                   <label
                     for="floating_email"
                     class="peer-focus:font-bold absolute text-xl text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-8 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-8"
-                    >Email
-                  </label>
+                    >Email</label
+                  >
                 </div>
               </div>
             </div>
+
             <div class="relative z-0 w-full mb-6 group">
               <textarea
                 id="floating_message"
@@ -936,12 +1001,12 @@
                 for="floating_message"
                 class="peer-focus:font-bold absolute text-xl text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-8 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-8"
               >
-                Pesan
+                Message
               </label>
             </div>
             <button
               type="submit"
-              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+              class="bg-blue-500 hover:bg-primary hover:drop-shadow-lg text-white w-full font-bold py-3 px-4 rounded hover:translate-y-[-3px] duration-300"
             >
               Kirim
             </button>
@@ -950,9 +1015,36 @@
       </div>
     </section>
 
+    <!-- button floating up -->
+    <a href="#home">
+      <button
+        id="scrollButton"
+        class="fixed invisible sm:visible bottom-4 right-4 w-12 h-12 bg-blue-500 text-white flex items-center justify-center rounded-full shadow-lg hover:opacity-80 z-40 animate-bounce"
+      >
+        <i class="fas fa-arrow-up"></i>
+      </button>
+    </a>
+    <!-- button floating up end -->
+
+    <!-- footer -->
+    <footer class="bg-gray-900 text-gray-300 py-4 h-24">
+      <div class="container mx-auto flex flex-col items-center justify-center">
+        <p>&copy; 2023 Aria<span class="text-red-500">Blog's</span>. All rights reserved.</p>
+        <p class="mt-1">this website build with TailwindCSS and ChatGPT 3.5</p>
+      </div>
+    </footer>
+    <!-- footer end -->
+
     <!-- section hubungi saya end -->
     <script src="dist/js/script.js"></script>
     <!-- <script src="node_modules/flowbite/dist/flowbite.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+
+    <!-- script AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- script AOS end -->
   </body>
 </html>
