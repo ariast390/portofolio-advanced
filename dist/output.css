@@ -1061,10 +1061,6 @@ html {
   bottom: 0px;
 }
 
-.-bottom-0{
-  bottom: -0px;
-}
-
 .-left-3{
   left: -0.75rem;
 }
@@ -1085,12 +1081,12 @@ html {
   left: 0px;
 }
 
-.left-1\/2{
-  left: 50%;
-}
-
 .right-0{
   right: 0px;
+}
+
+.right-10{
+  right: 2.5rem;
 }
 
 .right-4{
@@ -1396,6 +1392,10 @@ html {
   aspect-ratio: 16 / 9;
 }
 
+.h-10{
+  height: 2.5rem;
+}
+
 .h-12{
   height: 3rem;
 }
@@ -1496,10 +1496,6 @@ html {
   max-width: 250px;
 }
 
-.max-w-full{
-  max-width: 100%;
-}
-
 .flex-1{
   flex: 1 1 0%;
 }
@@ -1518,11 +1514,6 @@ html {
 
 .origin-\[0\]{
   transform-origin: 0;
-}
-
-.-translate-x-1\/2{
-  --tw-translate-x: -50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .-translate-x-full{
@@ -1608,14 +1599,6 @@ html {
 
 .resize{
   resize: both;
-}
-
-.list-inside{
-  list-style-position: inside;
-}
-
-.list-disc{
-  list-style-type: disc;
 }
 
 .appearance-none{
@@ -2113,11 +2096,6 @@ html {
   padding-bottom: 1.25rem;
 }
 
-.py-6{
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
-
 .pb-16{
   padding-bottom: 4rem;
 }
@@ -2146,8 +2124,8 @@ html {
   padding-top: 5rem;
 }
 
-.pt-32{
-  padding-top: 8rem;
+.pt-3{
+  padding-top: 0.75rem;
 }
 
 .pt-5{
@@ -2346,6 +2324,10 @@ html {
 
 .opacity-100{
   opacity: 1;
+}
+
+.opacity-80{
+  opacity: 0.8;
 }
 
 .shadow{
@@ -2798,6 +2780,10 @@ html {
     visibility: visible;
   }
 
+  .sm\:right-4{
+    right: 1rem;
+  }
+
   .sm\:my-0{
     margin-top: 0px;
     margin-bottom: 0px;
@@ -2835,14 +2821,16 @@ html {
     display: none;
   }
 
+  .sm\:h-12{
+    height: 3rem;
+  }
+
   .sm\:w-1\/2{
     width: 50%;
   }
 
-  .sm\:scale-75{
-    --tw-scale-x: .75;
-    --tw-scale-y: .75;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  .sm\:w-12{
+    width: 3rem;
   }
 
   .sm\:columns-3{
@@ -2918,6 +2906,10 @@ html {
   .sm\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .sm\:opacity-100{
+    opacity: 1;
   }
 }
 
@@ -3001,12 +2993,6 @@ html {
 
   .md\:w-1\/2{
     width: 50%;
-  }
-
-  .md\:scale-75{
-    --tw-scale-x: .75;
-    --tw-scale-y: .75;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
   .md\:flex-row{
