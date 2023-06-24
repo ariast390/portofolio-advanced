@@ -2934,16 +2934,8 @@ html {
     inset: 0px;
   }
 
-  .md\:left-5{
-    left: 1.25rem;
-  }
-
   .md\:top-36{
     top: 9rem;
-  }
-
-  .md\:left-20{
-    left: 5rem;
   }
 
   .md\:mx-auto{
@@ -3055,8 +3047,8 @@ html {
 }
 
 @media (min-width: 1024px){
-  .lg\:left-0{
-    left: 0px;
+  .lg\:left-12{
+    left: 3rem;
   }
 
   .lg\:mx-8{
