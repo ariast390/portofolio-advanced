@@ -2841,6 +2841,10 @@ html {
     width: 3rem;
   }
 
+  .sm\:w-full{
+    width: 100%;
+  }
+
   .sm\:columns-3{
     -moz-columns: 3;
          columns: 3;
