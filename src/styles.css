@@ -138,3 +138,10 @@ nav {
 .scroll-border {
   box-shadow: inset 0 -1px 00 rgba(0, 0, 0, 0.1);
 }
+
+/* hamburger animation */
+#hamburger-path,
+#close-path {
+  transition: stroke 0.3s ease;
+}
+/* hamburger animation end */

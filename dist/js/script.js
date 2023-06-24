@@ -1,4 +1,6 @@
 const mobileMenuButton = document.getElementById("mobile-menu-button");
+const hamburgerIcon = mobileMenuButton.querySelector("svg#hamburger-icon");
+const closeIcon = mobileMenuButton.querySelector("svg#close-icon");
 const mobileMenu = document.getElementById("mobile-menu");
 
 // Event listener untuk mobile menu button
@@ -6,6 +8,8 @@ mobileMenuButton.addEventListener("click", () => {
   const expanded = mobileMenuButton.getAttribute("aria-expanded") === "true" || false;
   mobileMenuButton.setAttribute("aria-expanded", !expanded);
   mobileMenu.classList.toggle("hidden");
+  hamburgerIcon.classList.toggle("hidden");
+  closeIcon.classList.toggle("hidden");
 });
 
 // Event listener untuk dokumen
@@ -17,6 +21,8 @@ document.addEventListener("click", (event) => {
   if (!isClickInsideMobileMenu && !isClickInsideMobileMenuButton) {
     mobileMenu.classList.add("hidden");
     mobileMenuButton.setAttribute("aria-expanded", false);
+    hamburgerIcon.classList.remove("hidden");
+    closeIcon.classList.add("hidden");
   }
 });
 
@@ -33,5 +39,4 @@ window.addEventListener("scroll", () => {
     navbar.classList.remove("scroll-border");
   }
 });
-
 // border navbar end

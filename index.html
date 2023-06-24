@@ -36,12 +36,12 @@
             <button
               id="mobile-menu-button"
               type="button"
-              class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              class="inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
               aria-expanded="false"
             >
               <span class="sr-only">Open main menu</span>
-              <!-- Hamburger menu icon -->
               <svg
+                id="hamburger-icon"
                 class="h-6 w-6"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -53,6 +53,21 @@
                   stroke-linejoin="round"
                   stroke-width="2"
                   d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+              <svg
+                id="close-icon"
+                class="h-6 w-6 hidden"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
                 ></path>
               </svg>
             </button>
@@ -98,7 +113,7 @@
       <!-- Mobile menu -->
       <div
         id="mobile-menu"
-        class="hidden sm:hidden absolute bg-white py-2 shadow-xl rounded-lg max-w-[250px] w-full right-4"
+        class="hidden sm:hidden absolute bg-white py-2 shadow-xl rounded-lg max-w-[250px] w-full right-4 border border-slate-200"
       >
         <div class="px-2 pt-2 pb-3 space-y-1">
           <a
@@ -174,7 +189,7 @@
 
     <!-- about me section -->
     <section
-      class="flex flex-wrap items-center justify-center mx-auto mt-16 sm:mt-28 pb-4 bg-slate-100"
+      class="flex flex-wrap items-center justify-center mx-auto mt-16 sm:mt-28 pb-4 bg-slate-100 shadow-sm"
       id="about-me"
       data-aos="fade-in"
     >
@@ -435,7 +450,7 @@
 
     <!--timeline section -->
     <section
-      class="my-0 mt-32 lg:mx-8 md:rounded-3xl md:pt-24 bg-[#E3F4F4] shadow-xl"
+      class="my-0 mt-32 lg:mx-8 md:rounded-3xl md:pt-24 bg-[#E3F4F4] shadow-sm sm:shadow-xl"
       id="timeline"
     >
       <div class="flex justify-center mx-auto" data-aos="flip-up" data-aos-duration="2000">
@@ -482,24 +497,24 @@
                     </p>
                     <div class="my-2 sm:my-0">
                       <span
-                        class="bg-blue-600 text-slate-100 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full"
+                        class="bg-blue-600 text-slate-200 text-xs font-bold mr-2 px-2.5 py-0.5 rounded-full"
                         >HTML
                       </span>
 
                       <span
-                        class="bg-blue-900 text-slate-100 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full"
+                        class="bg-blue-900 text-slate-200 text-xs font-bold mr-2 px-2.5 py-0.5 rounded-full"
                         >PYTHON
                       </span>
                       <span
-                        class="bg-pink-600 text-slate-100 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full"
+                        class="bg-pink-600 text-slate-200 text-xs font-bold mr-2 px-2.5 py-0.5 rounded-full"
                         >RASPBERRY PI
                       </span>
                       <span
-                        class="bg-teal-600 text-slate-100 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full"
+                        class="bg-teal-600 text-slate-200 text-xs font-bold mr-2 px-2.5 py-0.5 rounded-full"
                         >ARDUINO
                       </span>
                       <span
-                        class="bg-orange-600 text-slate-100 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full"
+                        class="bg-orange-600 text-slate-200 text-xs font-bold mr-2 px-2.5 py-0.5 rounded-full"
                         >FIREBASE
                       </span>
                     </div>
@@ -542,28 +557,29 @@
                     </p>
                     <p class="mb-3 text-slate-600 -mt-1">Internship | Bootcamp</p>
                     <p
-                      class="text-base leading-snug tracking-wide pb-3 text-slate-900 line-clamp-6 overflow-auto md:line-clamp-5 md:overflow-auto lg:line-clamp-none text-justify"
+                      class="text-base leading-snug tracking-wide pb-3 text-slate-900 line-clamp-6 overflow-auto md:line-clamp-5 md:overflow-auto lg:line-clamp-[7] lg:overflow-auto text-justify"
                     >
-                      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                      when an unknown printer took a galley of type and scrambled it to make a type
-                      specimen book.
+                      GOTO's Frontend Engineer Student Training is a 5-month program that equips
+                      aspiring frontend engineers with technical skills in HTML, CSS, JavaScript,
+                      and ReactJS. It also emphasizes soft skills and career readiness, providing
+                      hands-on experience through projects and mentorship. Graduates emerge prepared
+                      to thrive in the dynamic tech industry.
                     </p>
-                    <div class="my-2 sm:my-0">
+                    <div class="my-2 pt-2 sm:my-0">
                       <span
-                        class="bg-blue-900 text-blue-200 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300"
+                        class="bg-[#E4D04B] text-neutral-600 text-xs font-bold mr-2 px-2.5 py-0.5 rounded-full"
                         >JAVASCRIPT
                       </span>
                       <span
-                        class="bg-blue-900 text-blue-200 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300"
+                        class="bg-[#00CDF2] text-neutral-600 text-xs font-bold mr-2 px-2.5 py-0.5 rounded-full"
                         >REACT
                       </span>
                       <span
-                        class="bg-blue-600 text-blue-200 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300"
+                        class="bg-[#2F72BC] text-blue-200 text-xs font-bold mr-2 px-2.5 py-0.5 rounded-full"
                         >TYPESCRIPT
                       </span>
                       <span
-                        class="bg-blue-600 text-blue-200 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300"
+                        class="bg-blue-600 text-blue-200 text-xs font-bold mr-2 px-2.5 py-0.5 rounded-full"
                         >API
                       </span>
                     </div>
@@ -623,7 +639,7 @@
                   </div>
                   <div class="col-start-5 col-end-5 md:mx-auto relative">
                     <div class="h-full w-6 flex items-center justify-center">
-                      <div class="h-full w-2 bg-secondary pointer-events-none"></div>
+                      <div class="h-full w-2 bg-secondary pointer-events-none rounded-b-lg"></div>
                     </div>
                     <div
                       class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-[#F4B266] shadow"
@@ -632,7 +648,7 @@
                 </div>
 
                 <!-- pengalaman 4 -->
-                <div class="flex md:contents">
+                <!-- <div class="flex md:contents">
                   <div class="col-start-5 col-end-6 mr-5 md:mx-auto relative">
                     <div class="h-full w-6 flex items-center justify-center">
                       <div class="h-full w-2 bg-secondary pointer-events-none rounded-b-lg"></div>
@@ -684,7 +700,7 @@
                       Read More <i class="fa-solid fa-arrow-right"></i>
                     </p>
                   </div>
-                </div>
+                </div> -->
               </div>
               <object
                 data="dist/img/outer-space-animate.svg"
@@ -792,9 +808,13 @@
           <div
             class="flex items-start justify-between p-2 md:p-4 border-b rounded-t dark:border-gray-600"
           >
-            <h3 class="text-base md:text-xl font-semibold text-gray-900 dark:text-white">
-              Terms of Service 2
-            </h3>
+            <div class="flex-col">
+              <p class="text-xl sm:text-2xl font-semibold text-gray-900 dark:text-white">
+                Software Engineer Internship
+              </p>
+              <p class="text-slate-600 -mt-1">YABB-GOTO</p>
+              <p class="text-slate-600">Feb - Agu 2022</p>
+            </div>
             <button
               type="button"
               class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
@@ -819,23 +839,47 @@
           <!-- Modal body -->
           <div class="p-6 space-y-6 line-clamp-[9] md:line-clamp-none overflow-auto text-justify">
             <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-              With less than a month to go before the European Union enacts new consumer privacy
-              laws for its citizens, companies around the world are updating their terms of service
-              agreements to comply.
+              GOTO company, a collaboration between Gojek and Tokopedia, offers a specialized
+              learning program and bootcamp specifically designed for aspiring frontend engineers.
+              Known as the Frontend Engineer Student Training, this comprehensive program aims to
+              equip students with the necessary skills and knowledge to excel in the field.
             </p>
             <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-              The European Union’s General Data Protection Regulation (G.D.P.R.) goes into effect on
-              May 25 and is meant to ensure a common set of data rights in the European Union. It
-              requires organizations to notify users as soon as possible of high-risk data breaches
-              that could personally affect them.
+              The program spans a total duration of 5 months, providing participants with an
+              immersive learning experience. The first three months are dedicated to technical
+              skills training, where students delve deep into various aspects of frontend
+              engineering. They learn and master essential tools, technologies, and frameworks
+              utilized in frontend development, including HTML, CSS, JavaScript, and ReactJS.
+              Through hands-on projects and practical exercises, students gain proficiency in
+              building interactive and responsive user interfaces.
+            </p>
+            <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+              In addition to technical skills, the program also emphasizes the importance of soft
+              skills and career readiness. Participants receive guidance and training to enhance
+              their communication, teamwork, problem-solving, and time management abilities. They
+              also acquire valuable insights into the industry, including resume writing, interview
+              preparation, and professional etiquette. This holistic approach ensures that students
+              are well-rounded and equipped to thrive in their future frontend engineering careers.
+            </p>
+            <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+              During the final two months of the program, students engage in a capstone project or
+              internship. This component provides them with real-world experience, allowing them to
+              apply their acquired knowledge and skills to practical scenarios. They work on
+              challenging projects under the guidance of experienced mentors, gaining hands-on
+              experience and further honing their abilities as frontend engineers.
+            </p>
+            <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+              Overall, the Frontend Engineer Student Training program by GOTO offers a comprehensive
+              and rigorous curriculum, combining technical skills training, soft skills development,
+              and practical experience. By the end of the 5-month program, participants are equipped
+              with the necessary tools and competencies to excel as frontend engineers in the
+              dynamic and evolving tech industry.
             </p>
           </div>
           <!-- Modal footer -->
           <div
             class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600"
-          >
-            <p>Ini adalah footer</p>
-          </div>
+          ></div>
         </div>
       </div>
     </div>
@@ -1057,7 +1101,7 @@
     <a href="#">
       <button
         id="scrollButton"
-        class="fixed bottom-4 right-10 sm:right-4 w-10 h-10 sm:w-12 sm:h-12 bg-blue-500 text-white flex items-center justify-center rounded-full shadow-lg hover:opacity-80 z-40 opacity-80 sm:opacity-100 animate-bounce"
+        class="fixed bottom-3 right-4 w-10 h-10 sm:w-12 sm:h-12 bg-blue-500 text-white flex items-center justify-center rounded-full shadow-lg hover:opacity-80 z-40 opacity-80 sm:opacity-100 animate-bounce"
         aria-label="Page-Up"
       >
         <i class="fas fa-arrow-up"></i>
