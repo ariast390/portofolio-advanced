@@ -172,7 +172,7 @@
               <span class="sr-only">Light bulb</span>
             </span>
             <span
-              >This website is a component of an ongoing research project focused on developing a
+              >This website is a part of an ongoing research project focused on developing a
               personal portfolio website with the assistance of ChatGPT, aiming to enhance its
               functionality and design.
               <a
@@ -784,7 +784,7 @@
       id="Modal-pengalaman1"
       tabindex="-1"
       aria-hidden="true"
-      class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full"
+      class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-3rem)] max-h-full"
     >
       <div class="relative w-full max-w-2xl max-h-full">
         <!-- Modal content -->
@@ -823,7 +823,7 @@
             </button>
           </div>
           <!-- Modal body -->
-          <div class="p-6 space-y-6 line-clamp-[9] sm:line-clamp-none overflow-auto text-justify">
+          <div class="p-6 space-y-6 text-justify">
             <p class="text-base leading-relaxed text-gray-600">
               I am part of the software engineering team in the "Pengembangan Laptop Merah Putih"
               project, which serves as the foundation for my internship. Our team is divided into
@@ -862,7 +862,7 @@
       id="Modal-pengalaman2"
       tabindex="-1"
       aria-hidden="true"
-      class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full"
+      class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-3rem)] max-h-full"
     >
       <div class="relative w-full max-w-2xl max-h-full">
         <!-- Modal content -->
@@ -900,7 +900,7 @@
             </button>
           </div>
           <!-- Modal body -->
-          <div class="p-6 space-y-6 line-clamp-[9] md:line-clamp-none overflow-auto text-justify">
+          <div class="p-6 space-y-6 text-justify">
             <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
               GOTO company, a collaboration between Gojek and Tokopedia, offers a specialized
               learning program and bootcamp specifically designed for aspiring frontend engineers.
@@ -1127,8 +1127,8 @@
                   <label
                     for="floating_email"
                     class="peer-focus:font-bold absolute text-xl text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-8 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-8"
-                    >Email</label
-                  >
+                    >Email
+                  </label>
                 </div>
               </div>
             </div>
@@ -1155,10 +1155,145 @@
             >
               Kirim
             </button>
+
+            <p id="helper-text-explanation" class="mt-2 text-sm text-gray-500 dark:text-gray-400">
+              We’ll never share your details. Read our
+              <a
+                class="font-medium text-blue-600 hover:underline dark:text-blue-500 cursor-pointer"
+                data-modal-target="Privacy-Policy"
+                data-modal-toggle="Privacy-Policy"
+                >Privacy Policy</a
+              >.
+            </p>
           </form>
         </div>
       </div>
     </section>
+
+    <!-- modal privacy policy -->
+    <div
+      id="Privacy-Policy"
+      tabindex="-1"
+      aria-hidden="true"
+      class="fixed top-0 left-0 right-0 z-50 hidden w-full p-0 sm:p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full"
+    >
+      <div class="relative w-full max-w-2xl max-h-full">
+        <!-- Modal content -->
+        <div class="relative bg-neutral-50 rounded-none sm:rounded-lg shadow dark:bg-gray-700">
+          <!-- Modal header -->
+          <div
+            class="flex items-start justify-between p-2 md:p-4 border-b rounded-t dark:border-gray-600"
+          >
+            <div class="flex-col">
+              <p class="text-xl sm:text-2xl font-semibold text-gray-900 dark:text-white">
+                Privacy and Policy
+              </p>
+            </div>
+
+            <button
+              type="button"
+              class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
+              data-modal-hide="Privacy-Policy"
+            >
+              <svg
+                aria-hidden="true"
+                class="w-5 h-5"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <span class="sr-only">Close modal</span>
+            </button>
+          </div>
+          <!-- Modal body -->
+          <div class="p-5 sm:p-6 text-justify">
+            <p class="text-base leading-relaxed text-gray-600">
+              At ariaBlog's, we take your privacy seriously. This privacy policy outlines how we
+              collect, use, and protect the information you provide when submitting your email
+              through our website.
+            </p>
+            <p class="text-base leading-relaxed text-gray-600 mt-3">
+              The forms integrated into this website utilize a secure third-party API backend email
+              service provided by
+              <span class="text-blue-500">
+                <a href="https://formsubmit.co/">formSubmit.co</a>
+              </span>
+              , ensuring a high level of data security and protection.
+            </p>
+
+            <div class="gap-0">
+              <h2 class="text-lg font-bold">Information Collection and Use:</h2>
+              <p class="text-base leading-relaxed text-gray-600">
+                When you submit your email through our website's form, we collect and store the
+                email address you provide. We use this information solely for the purpose of
+                communication only.
+              </p>
+            </div>
+            <div class="gap-0">
+              <h2 class="text-lg font-bold">Data Security:</h2>
+              <p class="text-base leading-relaxed text-gray-600">
+                We are committed to ensuring the security of your information. We implement
+                industry-standard security measures to protect your email address from unauthorized
+                access, disclosure, or alteration. However, please note that no method of
+                transmission over the internet or electronic storage is 100% secure, and we cannot
+                guarantee absolute security.
+              </p>
+            </div>
+            <div class="gap-0">
+              <h2 class="text-lg font-bold">Third-Party Websites:</h2>
+              <p class="text-base leading-relaxed text-gray-600">
+                Our website may contain links to third-party websites. Please note that we are not
+                responsible for the privacy practices or the content of those websites. We encourage
+                you to review the privacy policies of any third-party websites you visit.
+              </p>
+            </div>
+            <div class="gap-0">
+              <h2 class="text-lg font-bold">Data Retention:</h2>
+              <p class="text-base leading-relaxed text-gray-600">
+                We retain your email address for as long as necessary to fulfill the purpose for
+                which it was collected, or as required by law. If you wish to have your email
+                address removed from our records, please contact us using the information provided
+                below.
+              </p>
+            </div>
+            <div class="gap-0">
+              <h2 class="text-lg font-bold">Updates to Privacy Policy:</h2>
+              <p class="text-base leading-relaxed text-gray-600">
+                We may update this privacy policy from time to time. Any changes or updates will be
+                posted on this page with a revised "Last Updated" date. We encourage you to review
+                this privacy policy periodically to stay informed about how we protect your
+                information.
+              </p>
+            </div>
+            <div class="gap-0">
+              <h2 class="text-lg font-bold">Contact Us:</h2>
+              <p class="text-base leading-relaxed text-gray-600">
+                If you have any questions or concerns regarding our privacy policy or the handling
+                of your personal information, please contact us at [email address] or through the
+                contact form on our website.
+              </p>
+            </div>
+            <p class="text-base leading-relaxed text-gray-600">
+              By using our website and submitting your email address, you acknowledge that you have
+              read, understood, and agree to the terms of this privacy policy.
+            </p>
+          </div>
+          <!-- Modal footer -->
+          <div
+            class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600"
+          >
+            <p class="text-lg font-bold">Last Updated: 24/06/2023</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal privacy policy end -->
 
     <!-- button floating up -->
     <a href="#">
