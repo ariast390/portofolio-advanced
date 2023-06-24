@@ -1342,6 +1342,14 @@ html {
   margin-top: 1.5rem;
 }
 
+.mr-36{
+  margin-right: 9rem;
+}
+
+.mr-16{
+  margin-right: 4rem;
+}
+
 .line-clamp-6{
   overflow: hidden;
   display: -webkit-box;
@@ -2130,6 +2138,10 @@ html {
 
 .pt-5{
   padding-top: 1.25rem;
+}
+
+.pl-36{
+  padding-left: 9rem;
 }
 
 .text-left{
