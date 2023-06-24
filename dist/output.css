@@ -2934,6 +2934,10 @@ html {
     inset: 0px;
   }
 
+  .md\:left-5{
+    left: 1.25rem;
+  }
+
   .md\:top-36{
     top: 9rem;
   }
@@ -3047,6 +3051,10 @@ html {
 }
 
 @media (min-width: 1024px){
+  .lg\:left-0{
+    left: 0px;
+  }
+
   .lg\:mx-8{
     margin-left: 2rem;
     margin-right: 2rem;
