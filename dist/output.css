@@ -1097,10 +1097,6 @@ html {
   top: 0px;
 }
 
-.top-1{
-  top: 0.25rem;
-}
-
 .top-1\/2{
   top: 50%;
 }
@@ -1780,10 +1776,6 @@ html {
   border-radius: 0.375rem;
 }
 
-.rounded-none{
-  border-radius: 0px;
-}
-
 .rounded-xl{
   border-radius: 0.75rem;
 }
@@ -2011,10 +2003,6 @@ html {
 
 .bg-opacity-50{
   --tw-bg-opacity: 0.5;
-}
-
-.p-0{
-  padding: 0px;
 }
 
 .p-1{
@@ -2930,14 +2918,6 @@ html {
 
   .sm\:flex-row{
     flex-direction: row;
-  }
-
-  .sm\:rounded-lg{
-    border-radius: 0.5rem;
-  }
-
-  .sm\:p-4{
-    padding: 1rem;
   }
 
   .sm\:p-6{
