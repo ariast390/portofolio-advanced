@@ -2887,6 +2887,10 @@ html {
     padding-bottom: 5rem;
   }
 
+  .sm\:pl-16{
+    padding-left: 4rem;
+  }
+
   .sm\:pt-0{
     padding-top: 0px;
   }
@@ -3047,10 +3051,6 @@ html {
 }
 
 @media (min-width: 1024px){
-  .lg\:left-12{
-    left: 3rem;
-  }
-
   .lg\:mx-8{
     margin-left: 2rem;
     margin-right: 2rem;
