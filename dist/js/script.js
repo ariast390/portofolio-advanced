@@ -5,7 +5,8 @@ const mobileMenu = document.getElementById("mobile-menu");
 
 // Event listener untuk mobile menu button
 mobileMenuButton.addEventListener("click", () => {
-  const expanded = mobileMenuButton.getAttribute("aria-expanded") === "true" || false;
+  const expanded =
+    mobileMenuButton.getAttribute("aria-expanded") === "true" || false;
   mobileMenuButton.setAttribute("aria-expanded", !expanded);
   mobileMenu.classList.toggle("hidden");
   hamburgerIcon.classList.toggle("hidden");
