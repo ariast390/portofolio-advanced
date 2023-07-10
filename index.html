@@ -28,7 +28,7 @@
     <title>AriaBlog's</title>
     <link rel="icon" href="dist/img/icon/icon-title.png" type="image/png" />
   </head>
-  <body class="overflow-x-hidden">
+  <body class="overflow-x-clip">
     <!-- navbar -->
     <nav
       class="w-screen bg-transparent fixed top-0 left-0 right-0 py-1 z-50 scroll-border"
@@ -51,7 +51,7 @@
             <button
               id="mobile-menu-button"
               type="button"
-              class="inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              class="inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:text-white hover:bg-gr`ay-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
               aria-expanded="false"
             >
               <span class="sr-only">Open main menu</span>
@@ -239,7 +239,7 @@
               <span class="inline-block animate-wave">👋</span>
               , I'am
               <span
-                class="block font-bold text-4xl lg:text-8xl sm:mr-12 typing-animation"
+                class="block font-bold text-4xl lg:text-8xl sm:mr-12 w-44 sm:w-[28rem] typing-animation"
               >
                 Aria Sena
               </span>
@@ -499,7 +499,7 @@
           <a
             href="https://www.instagram.com/aria_st/"
             target="_blank"
-            class="transition-all duration-300 transform-gpu hover:-translate-y-1 hover:scale-100 active:scale-95 relative"
+            class="transition-all duration-300 hover:-translate-y-1 hover:scale-105 active:scale-95 relative"
           >
             <img
               src="dist/img/icon/icon-instagram-circle.png"
@@ -510,14 +510,14 @@
           <a
             href="https://www.linkedin.com/in/aria-sena-trimulia/"
             target="_blank"
-            class="transition-all duration-300 transform-gpu hover:-translate-y-1 hover:scale-100 active:scale-95 relative"
+            class="transition-all duration-300 hover:-translate-y-1 hover:scale-105 active:scale-95 relative"
           >
             <img src="dist/img/icon/icon-linkedin-circle.png" alt="linkedIn Icon" />
           </a>
           <a
             href="https://wa.me/6285730037568"
             target="_blank"
-            class="transition-all duration-300 transform-gpu hover:-translate-y-1 hover:scale-100 active:scale-95 relative"
+            class="transition-all duration-300 hover:-translate-y-1 hover:scale-105 active:scale-95 relative"
           >
             <img src="dist/img/icon/icon-whatsapp.png" alt="WhatsApp Icon" />
           </a>
@@ -543,8 +543,12 @@
     <!-- about me section end -->
 
     <!--timeline section -->
-    <section
+    <!-- <section
       class="my-0 mt-32 lg:mx-8 md:rounded-3xl md:pt-24 bg-[#E3F4F4] shadow-sm sm:shadow-xl"
+      id="timeline"
+    > -->
+    <section
+      class="my-0 mt-32 lg:mx-8 md:rounded-3xl md:pt-24 bg-[#EFFCF8] shadow-sm sm:shadow-lg"
       id="timeline"
     >
       <div
@@ -582,7 +586,7 @@
                 <!-- pengalaman 1 -->
                 <div class="flex flex-row-reverse md:contents">
                   <div
-                    class="col-start-1 col-end-5 p-4 ms-5 sm:ms-0 rounded-xl my-4 ml-auto cursor-pointer hover:bg-slate-300 hover:shadow-xl hover:shadow-neutral-300/50 duration-500"
+                    class="col-start-1 col-end-5 p-4 ms-5 sm:ms-0 rounded-xl my-4 ml-auto cursor-pointer hover:bg-slate-300 hover:shadow-xl hover:shadow-neutral-300/50"
                     data-modal-target="Modal-pengalaman1"
                     data-modal-toggle="Modal-pengalaman1"
                     data-aos="zoom-in-left"
@@ -634,7 +638,7 @@
                   <div class="col-start-5 col-end-5 md:mx-auto relative">
                     <div class="h-full w-6 flex items-center justify-center">
                       <div
-                        class="h-full w-2 bg-secondary pointer-events-none rounded-t-lg"
+                        class="h-full w-2 bg-[#2F4858] pointer-events-none rounded-t-lg"
                       ></div>
                     </div>
                     <div
@@ -647,7 +651,7 @@
                 <div class="flex md:contents">
                   <div class="col-start-5 col-end-6 mr-5 md:mx-auto relative">
                     <div class="h-full w-6 flex items-center justify-center">
-                      <div class="h-full w-2 bg-secondary pointer-events-none"></div>
+                      <div class="h-full w-2 bg-[#2F4858] pointer-events-none"></div>
                     </div>
                     <div
                       class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-[#F4B266] shadow"
@@ -755,7 +759,7 @@
                   <div class="col-start-5 col-end-5 md:mx-auto relative">
                     <div class="h-full w-6 flex items-center justify-center">
                       <div
-                        class="h-full w-2 bg-secondary pointer-events-none rounded-b-lg"
+                        class="h-full w-2 bg-[#2F4858] pointer-events-none rounded-b-lg"
                       ></div>
                     </div>
                     <div
@@ -765,7 +769,7 @@
                 </div>
               </div>
               <object
-                data="dist/img/outer-space-animate.svg"
+                data="dist/img/outer-space-animate2.svg"
                 class="mx-auto invisible md:visible md:-mt-14 w-1/2"
                 data-aos="fade-up"
                 data-aos-duration="1500"
@@ -1017,13 +1021,15 @@
             <p
               class="text-base leading-relaxed text-gray-500 dark:text-gray-400 indent-8"
             >
-              During my time in vocational school, I gained hands-on experience in
-              troubleshooting computer issues, resolving network connectivity
-              problems, and setting up LAN connections. Additionally, I played a
-              vital role in managing and inputting data into the office's central
-              server, as well as crafting diverse correspondence and official
-              documents. This practical work not only honed my technical skills but
-              also enhanced my proficiency in office operations and data management.
+              During my time in vocational school, I had the opportunity to gain
+              practical experience by addressing computer malfunctions, resolving
+              network connectivity challenges, and setting up LAN connections.
+              Additionally, I played a significant role in managing and inputting
+              data into the office's central server, as well as creating various
+              types of official letters and documents. Engaging in these hands-on
+              tasks not only allowed me to refine my technical skills but also
+              enhanced my proficiency in office procedures and efficient data
+              handling.
             </p>
           </div>
           <!-- Modal footer -->
@@ -1291,7 +1297,7 @@
                     type="email"
                     name="email"
                     id="floating_email"
-                    class="block py-2.5 px-0 w-full text-sm sm:text-xl text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    class="block py-2.5 px-0 w-full text-sm sm:text-xl text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer invalid:border-pink-500 invalid:text-pink-600 focus:invalid:border-pink-500 focus:invalid:ring-pink-500"
                     placeholder=" "
                     required
                   />
