@@ -311,7 +311,7 @@
           data-aos="fade-left"
           data-aos-duration="1000"
         >
-          Mengenal Saya Lebih Dekat
+          Know Me Closer
         </h2>
         <div class="border-2 border-secondary rounded w-full"></div>
 
@@ -356,11 +356,11 @@
               <p
                 class="mb-2 text-sm md:text-lg text-justify text-gray-500 dark:text-gray-400"
               >
-                Saya adalah seorang pengembang web yang berfokus pada front-end
-                development. Saya memiliki passion dalam menciptakan pengalaman
-                pengguna yang menarik dan fungsional melalui desain yang responsif
-                dan interaktif. Dengan keahlian dalam HTML, CSS, dan JavaScript, saya
-                senang membangun website yang modern dan estetis.
+                I am a student and also have an interest in web development, focusing
+                on front-end development. I am passionate about creating engaging and
+                functional user experiences through responsive and interactive
+                designs. With expertise in HTML, CSS, and JavaScript, I love building
+                modern, aesthetically pleasing websites.
               </p>
             </div>
           </div>
@@ -408,7 +408,7 @@
                     <p class="font-semibold text-lg">HTML</p>
                   </div>
                   <div>
-                    <p class="text-gray-500 text-base">Intermediate</p>
+                    <p class="text-gray-500 text-base">Advanced</p>
                   </div>
                 </div>
 
@@ -453,7 +453,7 @@
                     <p class="font-semibold text-lg">ReactJs</p>
                   </div>
                   <div>
-                    <p class="text-gray-500 text-base">Intermediate</p>
+                    <p class="text-gray-500 text-base">Beginner</p>
                   </div>
                 </div>
 
@@ -499,7 +499,7 @@
           <a
             href="https://www.instagram.com/aria_st/"
             target="_blank"
-            class="transition-all duration-300 hover:-translate-y-1 hover:scale-105 active:scale-95 relative"
+            class="transition-all duration-300 hover:-translate-y-1 hover:scale-105 active:scale-95 relative drop-shadow-lg"
           >
             <img
               src="dist/img/icon/icon-instagram-circle.png"
@@ -510,14 +510,14 @@
           <a
             href="https://www.linkedin.com/in/aria-sena-trimulia/"
             target="_blank"
-            class="transition-all duration-300 hover:-translate-y-1 hover:scale-105 active:scale-95 relative"
+            class="transition-all duration-300 hover:-translate-y-1 hover:scale-105 active:scale-95 relative drop-shadow-lg"
           >
             <img src="dist/img/icon/icon-linkedin-circle.png" alt="linkedIn Icon" />
           </a>
           <a
             href="https://wa.me/6285730037568"
             target="_blank"
-            class="transition-all duration-300 hover:-translate-y-1 hover:scale-105 active:scale-95 relative"
+            class="transition-all duration-300 hover:-translate-y-1 hover:scale-105 active:scale-95 relative drop-shadow-lg"
           >
             <img src="dist/img/icon/icon-whatsapp.png" alt="WhatsApp Icon" />
           </a>
@@ -530,7 +530,7 @@
         >
           <a href="dist/files/Cv-aria.pdf" download>
             <button
-              class="bg-primary rounded-xl w-44 h-16 py-2 px-2 hover:bg-blue-500 active:bg-blue-100 transform transition duration-300 ease-in-out hover:-translate-y-1"
+              class="bg-primary rounded-xl w-44 h-16 py-2 px-2 hover:bg-blue-500 active:bg-blue-100 transform transition duration-300 ease-in-out hover:-translate-y-1 drop-shadow-lg"
             >
               <i class="fa-solid fa-arrow-down fa-lg"></i>
               <span class="ml-1 text-xl font-bold">Download CV</span>
@@ -548,7 +548,7 @@
       id="timeline"
     > -->
     <section
-      class="my-0 mt-32 lg:mx-8 md:rounded-3xl md:pt-24 bg-[#EFFCF8] shadow-sm sm:shadow-lg"
+      class="my-0 mt-32 lg:mx-8 md:rounded-3xl md:pt-24 bg-[#EFFCF8] shadow-sm sm:shadow-md"
       id="timeline"
     >
       <div
@@ -1221,6 +1221,44 @@
     </div>
     <!-- modal portfolio1 end-->
 
+    <!-- section like -->
+    <section
+      class="bg-green-100 my-16 py-20 mx-0 sm:mx-8 rounded-none sm:rounded-xl px-5 shadow-md"
+    >
+      <h2
+        class="text-2xl sm:text-5xl font-bold tracking-widest text-center pb-3 sm:pb-24 sm:py-1"
+      >
+        Do you Like My Website?
+      </h2>
+      <div class="flex flex-col sm:flex-row items-center justify-center px-16">
+        <!-- Tombol Suka dan Tidak Suka -->
+        <div
+          class="w-full sm:w-1/2 flex gap-5 my-5 items-center justify-center sm:order-1"
+        >
+          <button
+            id="satisfiedButton"
+            class="transition ease-in-out active:scale-95 hover:-translate-y-[2px] duration-300"
+          >
+            <i class="fa-regular fa-heart text-5xl sm:text-[7rem]"></i>
+          </button>
+          <button
+            id="dislikeButton"
+            class="transition ease-in-out active:scale-95 hover:-translate-y-[2px] duration-300"
+          >
+            <i class="fa-solid fa-heart-crack text-5xl sm:text-[7rem]"></i>
+          </button>
+        </div>
+        <!-- Jumlah orang yang menyukai -->
+        <div class="w-full sm:w-1/2 flex flex-col items-center sm:order-2">
+          <span class="text-4xl sm:text-5xl font-bold" id="likeCount">-</span>
+          <span class="text-lg sm:text-xl">Visitor Like This Website</span>
+        </div>
+      </div>
+      <p class="pt-10 text-slate-600">**This feature is in Beta Test.</p>
+    </section>
+
+    <!-- section like end -->
+
     <!-- section hubungi saya -->
     <section class="w-full bg-gray-100 mt-16 pb-16 px-3 lg:px-32" id="contact-me">
       <h2
@@ -1297,7 +1335,7 @@
                     type="email"
                     name="email"
                     id="floating_email"
-                    class="block py-2.5 px-0 w-full text-sm sm:text-xl text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer invalid:border-pink-500 invalid:text-pink-600 focus:invalid:border-pink-500 focus:invalid:ring-pink-500"
+                    class="block py-2.5 px-0 w-full text-sm sm:text-xl text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer invalid:text-pink-600 focus:invalid:border-pink-500 focus:invalid:ring-pink-500"
                     placeholder=" "
                     required
                   />
@@ -1473,7 +1511,9 @@
           <div
             class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600"
           >
-            <p class="text-lg font-bold">Last Updated: 24/06/2023</p>
+            <time class="text-lg font-bold" datetime="2023-06-24">
+              Last Updated: June 24, 2023
+            </time>
           </div>
         </div>
       </div>
@@ -1533,8 +1573,115 @@
     </footer>
     <!-- footer end -->
 
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.3/firebase-app.js";
+      import {
+        getDatabase,
+        ref,
+        onValue,
+        runTransaction,
+        set,
+        update,
+      } from "https://www.gstatic.com/firebasejs/9.1.3/firebase-database.js";
+
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyDzb4O_VtanFnEV39OnN8z-Jd-J0ofK3ik",
+        authDomain: "website-portfolio-3fa55.firebaseapp.com",
+        databaseURL:
+          "https://website-portfolio-3fa55-default-rtdb.asia-southeast1.firebasedatabase.app",
+        projectId: "website-portfolio-3fa55",
+        storageBucket: "website-portfolio-3fa55.appspot.com",
+        messagingSenderId: "151703843007",
+        appId: "1:151703843007:web:b036c890a60c087b2d560a",
+        measurementId: "G-NEJ9X68VRT",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const database = getDatabase(app);
+
+      // section likes
+      const satisfiedButton = document.getElementById("satisfiedButton");
+      const dislikeButton = document.getElementById("dislikeButton");
+      const likeCount = document.getElementById("likeCount");
+
+      // Mendapatkan referensi ke Firebase Realtime Database
+      const likeCountRef = ref(database, "likeCount");
+      const isLikedRef = ref(database, "isLiked");
+
+      // Mendapatkan jumlah like dari database
+      onValue(likeCountRef, (snapshot) => {
+        const currentCount = snapshot.val();
+        likeCount.textContent = currentCount ? currentCount.toString() : "0";
+      });
+
+      // Mendapatkan status isLiked dari database
+      onValue(isLikedRef, (snapshot) => {
+        const isLiked = snapshot.val();
+        if (isLiked) {
+          satisfiedButton.innerHTML =
+            '<i class="fa-regular fa-heart text-5xl sm:text-[7rem]" ></i>';
+          dislikeButton.disabled = false;
+        } else {
+          satisfiedButton.innerHTML =
+            '<i class="fa-regular fa-heart text-5xl sm:text-[7rem]"></i>';
+          dislikeButton.disabled = true;
+        }
+      });
+
+      // Mendefinisikan variabel untuk melacak status tombol
+      let isLiked = false;
+
+      // Mengubah status isLiked dan jumlah like saat tombol "Suka" diklik
+      satisfiedButton.addEventListener("click", () => {
+        if (!isLiked) {
+          runTransaction(likeCountRef, (currentCount) => {
+            if (!currentCount) {
+              return 1;
+            } else {
+              return currentCount + 1;
+            }
+          });
+
+          set(isLikedRef, true);
+
+          isLiked = true;
+          satisfiedButton.innerHTML =
+            '<i class="fa-solid fa-heart text-5xl sm:text-[7rem]" style="color: #ec1f09;"></i>';
+          dislikeButton.innerHTML =
+            '<i class="fa-solid fa-heart-crack text-5xl sm:text-[7rem]"></i>';
+        }
+      });
+
+      // Mengubah status isLiked dan jumlah like saat tombol "Tidak Suka" diklik
+      dislikeButton.addEventListener("click", () => {
+        if (isLiked) {
+          runTransaction(likeCountRef, (currentCount) => {
+            if (currentCount && currentCount > 0) {
+              return currentCount - 1;
+            }
+          });
+
+          update(isLikedRef, { isLiked: false });
+
+          isLiked = false;
+          satisfiedButton.innerHTML =
+            '<i class="fa-regular fa-heart text-5xl sm:text-[7rem]"></i>';
+          dislikeButton.innerHTML =
+            '<i class="fa-solid fa-heart-crack text-5xl sm:text-[7rem]" style="color: #296899;"></i>';
+        }
+      });
+
+      dislikeButton.addEventListener("click", () => {
+        dislikeButton.innerHTML =
+          '<i class="fa-solid fa-heart-crack text-5xl sm:text-[7rem]" style="color: #296899;"></i>';
+      });
+    </script>
+
     <!-- section hubungi saya end -->
     <script src="dist/js/script.js"></script>
+    <script src="dist/js/rtdb_likes.js"></script>
     <!-- <script src="node_modules/flowbite/dist/flowbite.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
 
