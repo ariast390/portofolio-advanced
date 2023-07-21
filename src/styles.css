@@ -156,15 +156,3 @@ nav {
   transition: stroke 0.3s ease;
 }
 /* hamburger animation end */
-
-/* section like */
-.transition-slow {
-  transition-duration: 500ms;
-}
-
-.transform-gpu {
-  transform-style: preserve-3d;
-  backface-visibility: hidden;
-}
-
-/* section like end */
