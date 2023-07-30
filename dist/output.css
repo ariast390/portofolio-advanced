@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap");
 
 /*
-! tailwindcss v3.3.2 | MIT License | https://tailwindcss.com
+! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -193,6 +193,10 @@ select,
 textarea {
   font-family: inherit;
   /* 1 */
+  font-feature-settings: inherit;
+  /* 1 */
+  font-variation-settings: inherit;
+  /* 1 */
   font-size: 100%;
   /* 1 */
   font-weight: inherit;
@@ -340,6 +344,14 @@ ul,
 menu {
   list-style: none;
   margin: 0;
+  padding: 0;
+}
+
+/*
+Reset default styling for dialogs.
+*/
+
+dialog {
   padding: 0;
 }
 
@@ -2585,6 +2597,11 @@ html {
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
 }
 
+.hover\:bg-\[\#61D3BA\]:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(97 211 186 / var(--tw-bg-opacity));
+}
+
 .hover\:bg-blue-500:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(63 131 248 / var(--tw-bg-opacity));
@@ -2610,11 +2627,6 @@ html {
   background-color: rgb(55 65 81 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-green-300:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(132 225 188 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-neutral-50:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(250 250 250 / var(--tw-bg-opacity));
@@ -2628,6 +2640,11 @@ html {
 .hover\:bg-slate-300:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(203 213 225 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-slate-400:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(148 163 184 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-slate-900:hover{
@@ -2698,13 +2715,8 @@ html {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.hover\:shadow-neutral-100\/5:hover{
-  --tw-shadow-color: rgb(245 245 245 / 0.05);
-  --tw-shadow: var(--tw-shadow-colored);
-}
-
-.hover\:shadow-neutral-300\/50:hover{
-  --tw-shadow-color: rgb(212 212 212 / 0.5);
+.hover\:shadow-neutral-300\/40:hover{
+  --tw-shadow-color: rgb(212 212 212 / 0.4);
   --tw-shadow: var(--tw-shadow-colored);
 }
 
@@ -3007,6 +3019,10 @@ html {
 
   .sm\:block{
     display: block;
+  }
+
+  .sm\:inline{
+    display: inline;
   }
 
   .sm\:hidden{

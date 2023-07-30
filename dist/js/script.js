@@ -41,3 +41,21 @@ window.addEventListener("scroll", () => {
   }
 });
 // border navbar end
+
+// percbaan btn like
+// Dapatkan referensi ke elemen ikon
+const heartIcon = document.getElementById("heartIcon");
+
+// Tambahkan event listener untuk mengubah ikon saat diklik
+// heartIcon.addEventListener("click", () => {
+//   // Toggle kelas "fa-regular" dan "fa-solid" untuk mengubah ikon
+//   heartIcon.classList.toggle("fa-regular");
+//   heartIcon.classList.toggle("fa-solid");
+
+//   // Toggle kelas "active" untuk memulai animasi
+//   heartIcon.classList.toggle("active");
+
+//   // Toggle style "color: #ec1f09;" untuk mengubah warna ikon saat berubah
+//   heartIcon.style.color = heartIcon.classList.contains("fa-solid") ? "#ec1f09" : "";
+// });
+// percbaan btn like end

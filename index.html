@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="scroll-smooth overflow-x-hidden">
   <head>
     <meta charset="UTF-8" />
@@ -331,7 +331,7 @@
               aria-expanded="true"
               aria-controls="accordion-collapse-body-1"
             >
-              <span class="text-lg font-bold">About Me</span>
+              <span class="text-xl font-bold">About Me</span>
               <svg
                 data-accordion-icon
                 class="w-6 h-6 rotate-180 shrink-0"
@@ -372,7 +372,7 @@
               aria-expanded="false"
               aria-controls="accordion-collapse-body-2"
             >
-              <span class="text-lg font-bold">My Skills</span>
+              <span class="text-xl font-bold">My Skills</span>
               <svg
                 data-accordion-icon
                 class="w-6 h-6 shrink-0"
@@ -586,7 +586,7 @@
                 <!-- pengalaman 1 -->
                 <div class="flex flex-row-reverse md:contents">
                   <div
-                    class="col-start-1 col-end-5 p-4 ms-5 sm:ms-0 rounded-xl my-4 ml-auto cursor-pointer hover:bg-slate-300 hover:shadow-xl hover:shadow-neutral-300/50"
+                    class="col-start-1 col-end-5 p-4 ms-5 sm:ms-0 rounded-xl my-4 ml-auto cursor-pointer hover:bg-slate-400 hover:shadow-xl hover:shadow-neutral-300/40 duration-300"
                     data-modal-target="Modal-pengalaman1"
                     data-modal-toggle="Modal-pengalaman1"
                     data-aos="zoom-in-left"
@@ -658,7 +658,7 @@
                     ></div>
                   </div>
                   <div
-                    class="col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto cursor-pointer hover:bg-green-300 hover:shadow-xl hover:shadow-neutral-100/5 duration-500"
+                    class="col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto cursor-pointer hover:bg-[#61D3BA] hover:shadow-xl hover:shadow-neutral-300/40 duration-500"
                     data-modal-target="Modal-pengalaman2"
                     data-modal-toggle="Modal-pengalaman2"
                     data-aos="zoom-in-right"
@@ -711,7 +711,7 @@
                 <!-- pengalaman 3-->
                 <div class="flex flex-row-reverse md:contents">
                   <div
-                    class="col-start-1 col-end-5 p-4 ms-5 sm:ms-0 rounded-xl my-4 ml-auto cursor-pointer hover:bg-slate-300 hover:shadow-xl hover:shadow-neutral-100/5 duration-500"
+                    class="col-start-1 col-end-5 p-4 ms-5 sm:ms-0 rounded-xl my-4 ml-auto cursor-pointer hover:bg-slate-300 hover:shadow-xl hover:shadow-neutral-300/40 duration-500"
                     data-modal-target="Modal-pengalaman3"
                     data-modal-toggle="Modal-pengalaman3"
                     data-aos="zoom-in-left"
@@ -829,7 +829,7 @@
           </div>
           <!-- Modal body -->
           <div class="p-6 space-y-6 text-justify">
-            <p class="text-base leading-relaxed text-gray-600 indent-8">
+            <p class="leading-relaxed text-base text-gray-600 indent-8">
               I am part of the software engineering team in the "Pengembangan Laptop
               Merah Putih" project, which serves as the foundation for my internship.
               Our team is divided into three divisions. My role within the team is to
@@ -1051,71 +1051,79 @@
       >
         My Portfolio
       </h2>
-      <p class="visible sm:hidden text-slate-500 py-6">
-        * Click / Hover Picture To See More Detail
-      </p>
+      <p class="text-slate-500 py-6">* Click / Hover Picture To See More Detail</p>
       <div class="gap-12 columns-1 sm:columns-3">
-        <div
-          class="relative border rounded-md mb-8 cursor-pointer"
-          data-aos="flip-right"
-          data-aos-duration="1500"
-          data-aos-offset="200"
-          data-modal-target="Modal-portfolio1"
-          data-modal-toggle="Modal-portfolio1"
+        <a
+          href="https://ariast390.github.io/Learning-Code/halodok/index.html"
+          target="_blank"
         >
-          <img
-            class="w-full aspect-auto"
-            src="dist/img/project-img/Bootstrap demo1.png"
-            alt="Project Slicing challenge HolaDok for practice"
-          />
           <div
-            class="absolute inset-0 rounded-md bg-black opacity-0 hover:opacity-75 transition-opacity duration-500"
+            class="relative border rounded-md mb-8 cursor-pointer"
+            data-aos="flip-right"
+            data-aos-duration="1500"
+            data-aos-offset="200"
           >
-            <div class="flex flex-col items-center justify-center h-full">
-              <h3 class="text-white text-lg font-semibold p-3 sm:p-0">
-                Slicing challenge HolaDok for practice
-              </h3>
+            <img
+              class="w-full aspect-auto"
+              src="dist/img/project-img/Bootstrap demo1.png"
+              alt="Project Slicing challenge HolaDok for practice image"
+            />
+            <div
+              class="absolute inset-0 rounded-md bg-black opacity-0 hover:opacity-75 transition-opacity duration-500"
+            >
+              <div class="flex flex-col items-center justify-center h-full">
+                <p class="text-white text-lg font-semibold p-3 sm:p-0 text-center">
+                  Slicing challenge HolaDok for practice with Bootstrap
+                </p>
+              </div>
             </div>
           </div>
-        </div>
+        </a>
         <div
-          class="relative"
-          data-aos="flip-right"
-          data-aos-duration="1500"
-          data-aos-offset="200"
-        >
-          <img
-            class="w-full aspect-square mb-6"
-            src="https://picsum.photos/500/300?random=2"
-            alt="Project B"
-          />
-          <div
-            class="absolute inset-0 bg-black opacity-0 hover:opacity-75 transition-opacity duration-500"
-          >
-            <div class="flex items-center justify-center h-full">
-              <h3 class="text-white text-lg font-semibold">Coming Soon Project</h3>
-            </div>
-          </div>
-        </div>
-        <div
-          class="relative"
+          class="relative hidden sm:inline"
           data-aos="flip-right"
           data-aos-duration="1500"
           data-aos-offset="200"
         >
           <img
             class="w-full aspect-video mb-6"
-            src="https://picsum.photos/500/300?random=3"
-            alt="Project C"
+            src="https://picsum.photos/500/300?random=1"
+            alt="Project D"
           />
           <div
             class="absolute inset-0 bg-black opacity-0 hover:opacity-75 transition-opacity duration-500"
           >
             <div class="flex items-center justify-center h-full">
-              <h3 class="text-white text-lg font-semibold">Coming Soon Project</h3>
+              <h3 class="text-white text-lg font-semibold">Coming1 Soon Project</h3>
             </div>
           </div>
         </div>
+        <a
+          href="https://ariast390.github.io/Learning-Code/twitter%20status/twitter.html"
+          target="_blank"
+        >
+          <div
+            class="relative"
+            data-aos="flip-right"
+            data-aos-duration="1500"
+            data-aos-offset="200"
+          >
+            <img
+              class="w-full aspect-video mb-6"
+              src="dist/img/project-img/twitter-card.png"
+              alt="Twitter Card Project Image"
+            />
+            <div
+              class="absolute inset-0 bg-black opacity-0 hover:opacity-75 transition-opacity duration-500"
+            >
+              <div class="flex items-center justify-center h-full">
+                <h3 class="text-white text-lg font-semibold">
+                  Twitter Card Project
+                </h3>
+              </div>
+            </div>
+          </div>
+        </a>
         <div
           class="relative"
           data-aos="flip-right"
@@ -1178,16 +1186,14 @@
     <!-- section portfolio end -->
 
     <!-- modal portfolio1 -->
-    <div
+    <!-- <div
       id="Modal-portfolio1"
       tabindex="-1"
       aria-hidden="true"
       class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-3rem)] max-h-full"
     >
       <div class="relative w-full max-w-4xl max-h-full">
-        <!-- Modal content -->
         <div class="relative bg-transparent rounded-lg shadow">
-          <!-- Modal header -->
           <div class="absolute top-0 right-0 p-2 md:p-4">
             <button
               type="button"
@@ -1210,7 +1216,7 @@
               <span class="sr-only">Close modal</span>
             </button>
           </div>
-          <!-- Modal body -->
+
           <img
             src="dist/img/project-img/Bootstrap demo1.png"
             class="h-auto w-full max-h-screen object-contain"
@@ -1218,7 +1224,7 @@
           />
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- modal portfolio1 end-->
 
     <!-- section like -->
@@ -1237,10 +1243,14 @@
         >
           <button
             id="satisfiedButton"
-            class="transition ease-in-out active:scale-95 hover:-translate-y-[2px] duration-300"
+            class="transition-all ease-in-out active:scale-95 hover:-translate-y-[2px] duration-300"
           >
             <i class="fa-regular fa-heart text-5xl sm:text-[7rem]"></i>
           </button>
+          <!-- percobaan -->
+          <!-- <i id="heartIcon" class="fa-regular fa-heart text-5xl sm:text-[7rem]"></i> -->
+          <!-- percobaan end -->
+
           <button
             id="dislikeButton"
             class="transition ease-in-out active:scale-95 hover:-translate-y-[2px] duration-300"
