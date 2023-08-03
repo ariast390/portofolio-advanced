@@ -42,20 +42,39 @@ window.addEventListener("scroll", () => {
 });
 // border navbar end
 
-// percbaan btn like
-// Dapatkan referensi ke elemen ikon
-const heartIcon = document.getElementById("heartIcon");
+// percobaan hidden up btn
+const scrollButton = document.getElementById("scrollButton");
 
-// Tambahkan event listener untuk mengubah ikon saat diklik
-// heartIcon.addEventListener("click", () => {
-//   // Toggle kelas "fa-regular" dan "fa-solid" untuk mengubah ikon
-//   heartIcon.classList.toggle("fa-regular");
-//   heartIcon.classList.toggle("fa-solid");
+function toggleScrollButton() {
+  const scrollPosition = window.scrollY;
+  const documentHeight = document.documentElement.scrollHeight;
+  const windowHeight = window.innerHeight;
 
-//   // Toggle kelas "active" untuk memulai animasi
-//   heartIcon.classList.toggle("active");
+  const triggerPosition = 0.4; // 40% of the page height
 
-//   // Toggle style "color: #ec1f09;" untuk mengubah warna ikon saat berubah
-//   heartIcon.style.color = heartIcon.classList.contains("fa-solid") ? "#ec1f09" : "";
-// });
-// percbaan btn like end
+  if ((scrollPosition + windowHeight) / documentHeight > triggerPosition) {
+    scrollButton.style.opacity = 1;
+  } else {
+    scrollButton.style.opacity = 0;
+  }
+}
+
+function hideScrollButtonOnLoad() {
+  const documentHeight = document.documentElement.scrollHeight;
+  const windowHeight = window.innerHeight;
+
+  if (windowHeight === 0) {
+    // If the windowHeight is still 0, it means the page is still loading
+    scrollButton.style.opacity = 0; // Hide the button
+  } else {
+    // Otherwise, check the scroll position and show/hide the button accordingly
+    toggleScrollButton();
+  }
+}
+
+// Call the function once the DOM is fully loaded
+document.addEventListener("DOMContentLoaded", hideScrollButtonOnLoad);
+
+// Add event listener to handle scroll
+document.addEventListener("scroll", toggleScrollButton);
+// percobaan hidden up btn end
