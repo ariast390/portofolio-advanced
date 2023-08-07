@@ -42,7 +42,7 @@ window.addEventListener("scroll", () => {
 });
 // border navbar end
 
-// percobaan hidden up btn
+// hidden up btn
 const scrollButton = document.getElementById("scrollButton");
 
 function toggleScrollButton() {
@@ -77,4 +77,4 @@ document.addEventListener("DOMContentLoaded", hideScrollButtonOnLoad);
 
 // Add event listener to handle scroll
 document.addEventListener("scroll", toggleScrollButton);
-// percobaan hidden up btn end
+// hidden up btn end
