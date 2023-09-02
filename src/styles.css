@@ -145,10 +145,11 @@
 section {
   padding-top: 4rem;
 }
-/* fixing navbar end */
+
 nav {
   backdrop-filter: blur(1em);
 }
+/* fixing navbar end */
 
 .scroll-border {
   box-shadow: inset 0 -1px 00 rgba(0, 0, 0, 0.1);

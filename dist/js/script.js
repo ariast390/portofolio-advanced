@@ -78,3 +78,27 @@ document.addEventListener("DOMContentLoaded", hideScrollButtonOnLoad);
 // Add event listener to handle scroll
 document.addEventListener("scroll", toggleScrollButton);
 // hidden up btn end
+
+// darkmode toggle
+const darkToggle = document.querySelector("#dark-toggle");
+const html = document.querySelector("html");
+
+darkToggle.addEventListener("click", function () {
+  if (darkToggle.checked) {
+    html.classList.add("dark");
+  } else {
+    html.classList.remove("dark");
+  }
+});
+
+const darkToggleMobile = document.querySelector("#dark-toggle-mobile");
+const htmlMobile = document.querySelector("html");
+
+darkToggleMobile.addEventListener("click", function () {
+  if (darkToggleMobile.checked) {
+    html.classList.add("dark");
+  } else {
+    html.classList.remove("dark");
+  }
+});
+// darkmode toggle end

@@ -9,3 +9,11 @@
     font-family: "Nunito", sans-serif;
   }
 }
+/* toggle */
+#dark-toggle:checked ~ label div.toggle-circle {
+  @apply translate-x-5;
+}
+#dark-toggle-mobile:checked ~ label div.toggle-circle-mobile {
+  @apply translate-x-5;
+}
+/* toggle end */
